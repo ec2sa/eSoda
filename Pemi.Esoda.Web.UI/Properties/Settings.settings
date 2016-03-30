@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Pemi.Esoda.Web.UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Pemi_Esoda_Web_UI_PemiESP_ESPWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://alfatv.pemi.pl/espwebservice.asmx</Value>
+    </Setting>
+    <Setting Name="eSodaConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data source=.\sqlexpress;initial catalog=eSoda;integrated security=SSPI;Min pool size=50;MAx pool size=300</Value>
+    </Setting>
+    <Setting Name="Pemi_Esoda_Web_UI_ReportingServices_ReportExecutionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://EC2DEV1:80/ReportServer/ReportExecution2005.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:tns="http://ws.epuap.gov.pl/skrytka/" xmlns:ob="http://wsdl.epuap.gov.pl/obiekty/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/08/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="skrytka" targetNamespace="http://ws.epuap.gov.pl/skrytka/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <documentation>Wersja 1.1</documentation>
+  <wsp:UsingPolicy Required="true" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/08/policy" />
+  <wsp:Policy wsu:Id="x509Token" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/08/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <wsp:ExactlyOne>
+      <wsse:SecurityToken xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+        <wsse:TokenType>
+					"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+				</wsse:TokenType>
+      </wsse:SecurityToken>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="obiektypk.xsd" namespace="http://wsdl.epuap.gov.pl/obiekty/" />
+    </xsd:schema>
+  </types>
+  <message name="nadajResponse">
+    <part name="odpowiedz" element="ob:OdpowiedzSkrytki" />
+  </message>
+  <message name="nadajFaultMsg">
+    <part name="faultStatus" element="ob:Wyjatek" />
+  </message>
+  <message name="nadajRequest">
+    <part name="podmiot" element="ob:IdentyfikatorPodmiotu">
+      <documentation>Podmiot, w kontekście którego nadawany jest dokument.</documentation>
+    </part>
+    <part name="adresSkrytki" element="ob:AdresSkrytki">
+      <documentation>Adres skrytki odbiorcy</documentation>
+    </part>
+    <part name="adresOdpowiedzi" element="ob:AdresOdpowiedzi">
+      <documentation>Adres skrytki nadawcy, na który mają być przysyłane odpowiedzi w sprawie.</documentation>
+    </part>
+    <part name="czyProbne" element="ob:CzyProbne">
+      <documentation>Czy to jest nadanie próbne?</documentation>
+    </part>
+    <part name="daneDodatkowe" element="ob:DaneDodatkowe">
+      <documentation>Dodatkowe dane w formacie XML</documentation>
+    </part>
+    <part name="dokument" element="ob:Dokument">
+      <documentation>Przesyłany dokument, wraz z ewentualnymi załącznikami</documentation>
+    </part>
+  </message>
+  <portType name="skrytka">
+    <documentation>Interfejs do nadawania dokumentow na skrytke</documentation>
+    <operation name="nadaj">
+      <documentation>Nadanie (przedlozenie) dokumentu na skrytke odbiorcy.
+Parametry:
+podmiot - identyfikator podmiotu, w imieniu ktorego przekazywany jest dokument
+adresSkrytki - adres skrytki adresata
+adresOdpowiedzi - adres skrytki nadawcy, przeznaczonej na odpowiedzi
+czyProbne - czy nadanie bez przekazywania dokumentu do odbiorcy
+dokument - przekazywany dokument XML</documentation>
+      <input message="tns:nadajRequest" />
+      <output message="tns:nadajResponse" />
+      <fault name="fault" message="tns:nadajFaultMsg" />
+    </operation>
+  </portType>
+  <binding name="skrytkaBinding" type="tns:skrytka">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsp:PolicyReference URI="#x509Token" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/08/policy" />
+    <operation name="nadaj">
+      <soap:operation soapAction="http://ws.epuap.gov.pl/skrytka/nadaj" />
+      <input>
+        <soap:header message="tns:nadajRequest" part="podmiot" use="literal" />
+        <soap:header message="tns:nadajRequest" part="adresSkrytki" use="literal" />
+        <soap:header message="tns:nadajRequest" part="adresOdpowiedzi" use="literal" />
+        <soap:header message="tns:nadajRequest" part="czyProbne" use="literal" />
+        <soap:header message="tns:nadajRequest" part="daneDodatkowe" use="literal" />
+        <soap:body use="literal" parts="dokument" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="odpowiedz" />
+      </output>
+      <fault name="fault">
+        <soap:fault use="literal" name="fault" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="pkSkrytkaService">
+    <port name="skrytka" binding="tns:skrytkaBinding">
+      <soap:address location="http://91.199.250.170:80/pk_external_ws/services/skrytka" />
+    </port>
+  </service>
+</definitions>

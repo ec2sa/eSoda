@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Pemi.Esoda.Presenters.AddItemScanPresenter">
+    <Position X="7.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AddItemScanPresenter.cs</FileName>
+      <HashCode>AAAAQAAAAACAAQAAAAEBAAAAIAAAAAAAIUAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.BasePresenter">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BasePresenter.cs</FileName>
+      <HashCode>AAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.EditRegistyItemPresenter">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EditRegistyItemPresenter.cs</FileName>
+      <HashCode>AEBAQAABAACAAwAAAAEAAAAAAACAAAAAIUAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.ExecutingCommandEventArgs">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExecutingCommandEventArgs.cs</FileName>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.GetImagePresenter">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GetImagePresenter.cs</FileName>
+      <HashCode>AAAAQAAAAAAAAQQAQAAEAAAAAAAAEAAAIUAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.ViewItemHistoryPresenter">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewItemHistoryPresenter.cs</FileName>
+      <HashCode>AAAAQAAAAACAAQAAAAEAAAAAAAAAAAAAIUAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.ViewItemScansPresenter">
+    <Position X="12.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ViewItemScansPresenter.cs</FileName>
+      <HashCode>gAAAQAAAAACAAQAAAAEAAAAAAAAAAABAIUACBABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.ViewRegistryPresenter">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewRegistryPresenter.cs</FileName>
+      <HashCode>QIAQQgAAAAAAAQAAAAEAAAAQAAAAIAAAIUACAAIIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.ViewRegistryPresenterState">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewRegistryPresenter.cs</FileName>
+      <HashCode>QAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAgAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Presenters.PagerEventArgs">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewRegistryPresenter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pemi.Esoda.Presenters.IAddItemScanView">
+    <Position X="14.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IAddItemScanView.cs</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IEditRegistyItemView">
+    <Position X="0.75" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IEditRegistyItemView.cs</FileName>
+      <HashCode>AgEAAAAAAAAAAgABgAAAEAAQCAAAgBAAAAAAAAQKABg=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IGetImageView">
+    <Position X="16.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IGetImageView.cs</FileName>
+      <HashCode>AAAAAAAABAAAABQAAAAAAEAAAQAAAAAAAAAAAAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.ISessionProvider">
+    <Position X="13" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\ISessionProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAABwAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IView">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IView.cs</FileName>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IViewItemHistoryView">
+    <Position X="14.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IViewItemHistoryView.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IViewItemScansView">
+    <Position X="16.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IViewItemScansView.cs</FileName>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACAAgAAg=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Presenters.IViewRegistryView">
+    <Position X="3" Y="5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IViewRegistryView.cs</FileName>
+      <HashCode>AAAAgAgAAAEAAAAAAEAIAAAwBAUAAAAAhAQIMEAAAAI=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Pemi.Esoda.Presenters.IView" FixedToPoint="true">
+      <Path>
+        <Point X="1.5" Y="1.863" />
+        <Point X="1.5" Y="2.058" />
+        <Point X="4.083" Y="2.058" />
+        <Point X="4.083" Y="5" />
+      </Path>
+    </InheritanceLine>
+  </Interface>
+  <Enum Name="Pemi.Esoda.Presenters.PagerPage">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewRegistryPresenter.cs</FileName>
+      <HashCode>AgAAACAAAAAAAwAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pemi.Esoda.Presenters.DateRange">
+    <Position X="14.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewRegistryPresenter.cs</FileName>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

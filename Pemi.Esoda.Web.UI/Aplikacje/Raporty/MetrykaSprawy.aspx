@@ -1,0 +1,1 @@
+﻿<%@ Page Title=""  Theme="" Language="C#" AutoEventWireup="true" CodeBehind="MetrykaSprawy.aspx.cs" Inherits="Pemi.Esoda.Web.UI.Aplikacje.Raporty.MetrykaSprawy" %>

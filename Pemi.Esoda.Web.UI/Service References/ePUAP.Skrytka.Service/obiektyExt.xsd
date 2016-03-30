@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ns="http://wsdl.epuap.gov.pl/obiekty/ext/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" targetNamespace="http://wsdl.epuap.gov.pl/obiekty/ext/" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <annotation>
+    <documentation>Wersja 1.0 z dnia 13.09.2008</documentation>
+    <appinfo>$Revision: 1.1 $</appinfo>
+  </annotation>
+  <element name="Dokument" type="anyType" />
+</schema>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Pemi.Esoda.Core.Configuration">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Configuration.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Core.MimeHelper">
+    <Position X="7.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>MimeHelper.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Core.TypMime">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MimeHelper.cs</FileName>
+      <HashCode>AAAAAAAAAACAIAAABAAAAAAQAAAAAACCAAAgAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Core.Domain.BaseDomainObject&lt;T&gt;">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Domain\BaseDomainObject.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.Core.Domain.DocumentItem">
+    <Position X="0.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Domain\DocumentItem.cs</FileName>
+      <HashCode>AAABAIQAAAAABAAgIAAEAAAAAAAAAAAAAAEABAAAAAE=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Pemi.Esoda.Core.Domain.BaseDomainObject&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="2.409" />
+        <Point X="2" Y="2.505" />
+        <Point X="2" Y="2.505" />
+        <Point X="2" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Pemi.Esoda.Core.Domain.IDocument">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Domain\Interfaces\IDocument.cs</FileName>
+      <HashCode>AAAAQAAAAAAgAEAAAAAAAAQAgAgAAgAEAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Core.Domain.IDocumentItem">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Domain\Interfaces\IDocumentItem.cs</FileName>
+      <HashCode>AAAAAQAAAAAggAQAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pemi.Esoda.Core.Domain.IHistoryItem">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Domain\Interfaces\IHistoryItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAIBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

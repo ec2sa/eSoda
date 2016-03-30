@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SingleColumn.master.cs"
+    Inherits="Pemi.Esoda.Web.UI.MasterPages.SingleColumn" %>
+
+<%@ Register Src="../Controls/CaseNav.ascx" TagName="CaseNav" TagPrefix="uc1" %>
+<%@ Register Src="../Controls/AktualneZastepstwaPrzelacz.ascx" TagName="AktualneZastepstwaPrzelacz"
+    TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title runat="server" id="pageTitle"></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="sm1" runat="server" EnablePartialRendering="true"
+        EnableScriptGlobalization="true" EnableScriptLocalization="true" />
+    <asp:UpdateProgress runat="server" ID="updprogress" DisplayAfter="150" AssociatedUpdatePanelID="up0">
+        <ProgressTemplate>
+            <div class="progress">
+                <asp:Image runat="Server" ID="ajaxlogo" ImageUrl="~/App_Themes/StandardLayout/img/ajax-loader.gif"
+                    ToolTip="...wczytywanie..." AlternateText="...wczytywanie..." />
+                <p>proszę czekać...</p>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <div id="allContent">
+        <asp:UpdatePanel runat="server" ID="up0">
+            <ContentTemplate>
+                <div id="allHeader">
+                    <div id="headerTop">
+                        <asp:Label ID="lblyala" runat="server" Text="Jesteś zalogowany jako " Visible="false" />
+                        <strong>
+                            <asp:LoginName ID="LoginName1" runat="server" FormatString=" {0}" />
+                        </strong>&nbsp;<em><asp:Literal runat="Server" ID="userInfo" /></em>
+                        <asp:LoginStatus runat="server" ID="ls" LoginText="" LogoutAction="RedirectToLoginPage"
+                            LogoutText="Wyloguj się" OnLoggedOut="wylogowanie" />
+                        <asp:Literal ID="litBAR" Visible="false" runat="server" Text=" | " />
+                        <asp:LinkButton ID="lnkChangeUserPassword" Visible="false" runat="server" Text="Zmień hasło"
+                            PostBackUrl="~/ZmianaHasla.aspx"></asp:LinkButton>
+                        <uc2:AktualneZastepstwaPrzelacz ID="aktualneZastepstwaPrzelacz" runat="server" />
+                        <asp:ContentPlaceHolder ID="header" runat="server" />
+                    </div>
+                    <table class="layout fullWidth" border="0" cellpadding="0" cellspacing="0" style='background-color:<%= Pemi.Esoda.Web.UI.Classes.LayoutConfig.BGColor %>!important;'>
+                        <tr>
+                            <td id="logoContainer1">
+                                <img src='<%= Pemi.Esoda.Web.UI.Classes.LayoutConfig.Logo1Url %>' alt="" />
+                            </td>
+                            <td  id="logoContainer2">
+                                <img src='<%= Pemi.Esoda.Web.UI.Classes.LayoutConfig.Logo2Url %>' alt="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="naviPath">
+                                    <span style="color: #adadad;">Jesteś w: </span>
+                                    <uc1:CaseNav ID="CaseNav1" runat="server" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <ul id="navlist">
+                    <li>
+                        <asp:LinkButton ID="LinkButton0" runat="server" Text="Oczekujące zadania" ToolTip="Lista zadań przypisanych do pracownika lub jego wydziału"
+                            CommandName="zadania" OnCommand="wykonaj" /></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" Text="Akta spraw" ToolTip="Przeglądanie akt spraw"
+                            CommandName="akta" OnCommand="wykonaj" /></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton2" runat="server" Text="Rejestry" ToolTip="Przeglądanie rejestrów"
+                            CommandName="rejestry" OnCommand="wykonaj" /></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" Text="Aplikacje" ToolTip="Lista dostępnych aplikacji"
+                            CommandName="aplikacje" OnCommand="wykonaj" /></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton3" runat="server" Text="Wyszukiwarka" ToolTip="Wyszukiwanie spraw/dokumentów/plików"
+                            CommandName="szukanie" OnCommand="wykonaj" /></li>
+                </ul>
+                <div id="mainContent">
+                    <asp:ContentPlaceHolder ID="main" runat="server" />
+                </div>
+                <div id="footerContent">
+                    <asp:ContentPlaceHolder ID="footer" runat="server" />
+                    <p>
+                        <asp:Label runat="Server" ID="versionInfo" Visible="false" />
+                        &copy;2011 <a href="http://podpiselektroniczny.pl">Stowarzyszenie PEMI</a>. Wszystkie
+                        prawa zastrzeżone. | eSoda v.<asp:Literal runat="Server" ID="versionInfoHeader" />
+                        <asp:Literal ID="lblLoadTime" runat="server" /></p>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>

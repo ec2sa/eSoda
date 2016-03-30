@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#"   Theme=""  AutoEventWireup="true" CodeBehind="PotwierdzenieRejestracji.aspx.cs" Inherits="Pemi.Esoda.Web.UI.Aplikacje.Raporty.PotwierdzenieRejestracji" %>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konfiguracjaSkanerow katalog="D:\AppFolders\esodascans">
+<instytucja>
+		<nazwa>Urząd Miasta Wołomina</nazwa>
+		<adres>ul. Jakaśtam 11/34</adres>
+	</instytucja>
+	<lokalizacja nazwa="Biuro" katalog="Biuro">
+		<skaner nazwa="skaner nr 1" katalog="skaner" opis="Skaner HP 2435; czynny 7:00-15:30">
+			<kryterium nazwa="Wnioski" typ="rodzajDokumentu" opis="Tu trafiają wnioski" katalog="Wnioski">
+				<kryterium nazwa="Biuro podawcze" typ="zrodloDokumentu" katalog="BP"/>
+				<kryterium nazwa="Poczta" typ="zrodloDokumentu" katalog="P"/>
+			</kryterium>
+		
+		</skaner>		
+	</lokalizacja>	
+</konfiguracjaSkanerow>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OCRService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=ec2dev1;database=esoda;integrated security=SSPI;</Value>
+    </Setting>
+    <Setting Name="GetConfigProcedureName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pOCRGetConfiguration</Value>
+    </Setting>
+    <Setting Name="GetScanProcedureName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pOCRGetScan</Value>
+    </Setting>
+    <Setting Name="DocumentsDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\AppFolders\eSoda\Dokumenty</Value>
+    </Setting>
+    <Setting Name="SaveOCRSuccessProcedureName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pOCRSaveOCRText</Value>
+    </Setting>
+    <Setting Name="SaveOCRFailureProcedureName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pOCRMarkAsUnOCRable</Value>
+    </Setting>
+    <Setting Name="TessdataDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\release\ocrService\Application Files\OCRService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,1662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E24170DD-50F0-43B2-89CE-0402022092CE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pemi.Esoda.Web.UI</RootNamespace>
+    <AssemblyName>Pemi.Esoda.Web.UI</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+    <DeployIisAppPath>Default Web Site/eSoda</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Instalka|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.3302.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.0.9414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.TemplateWizardInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Pemi.eSoda.CustomForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Pemi.eSoda.CustomForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\SMSService.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Akcje\DekretacjaDokumentuWielokrotna.aspx.cs">
+      <DependentUpon>DekretacjaDokumentuWielokrotna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\DekretacjaDokumentuWielokrotna.aspx.designer.cs">
+      <DependentUpon>DekretacjaDokumentuWielokrotna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\DaneDokumentu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DaneDokumentu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\DekretacjaDokumentu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DekretacjaDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\DekretacjaDokumentu.aspx.designer.cs">
+      <DependentUpon>DekretacjaDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\edycjaDokumentu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>edycjaDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\edycjaDokumentu.aspx.designer.cs">
+      <DependentUpon>edycjaDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\edycjaSprawy.aspx.cs">
+      <DependentUpon>edycjaSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\edycjaSprawy.aspx.designer.cs">
+      <DependentUpon>edycjaSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\NowyDokumentLogiczny.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NowyDokumentLogiczny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\NowyDokumentLogiczny.aspx.designer.cs">
+      <DependentUpon>NowyDokumentLogiczny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\PowiadomienieSMS.aspx.cs">
+      <DependentUpon>PowiadomienieSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\PowiadomienieSMS.aspx.designer.cs">
+      <DependentUpon>PowiadomienieSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\PrzekazanieSprawy.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PrzekazanieSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\PrzekazanieSprawy.aspx.designer.cs">
+      <DependentUpon>PrzekazanieSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\SelectRegistry.aspx.cs">
+      <DependentUpon>SelectRegistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\SelectRegistry.aspx.designer.cs">
+      <DependentUpon>SelectRegistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\SzczegolyAkcji.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SzczegolyAkcji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\SzczegolyAkcji.aspx.designer.cs">
+      <DependentUpon>SzczegolyAkcji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\UsuniecieDokumentuZeSprawy.aspx.cs">
+      <DependentUpon>UsuniecieDokumentuZeSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\UsuniecieDokumentuZeSprawy.aspx.designer.cs">
+      <DependentUpon>UsuniecieDokumentuZeSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\WykonanieCzynnosci.aspx.cs">
+      <DependentUpon>WykonanieCzynnosci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\WykonanieCzynnosci.aspx.designer.cs">
+      <DependentUpon>WykonanieCzynnosci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akta\AktaSpraw.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AktaSpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akta\AktaSpraw.aspx.designer.cs">
+      <DependentUpon>AktaSpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegrationFileDownload.aspx.cs">
+      <DependentUpon>ePUAPIntegrationFileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegrationFileDownload.aspx.designer.cs">
+      <DependentUpon>ePUAPIntegrationFileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\HistoriaDokumentuPozycjiDziennika.aspx.cs">
+      <DependentUpon>HistoriaDokumentuPozycjiDziennika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\HistoriaDokumentuPozycjiDziennika.aspx.designer.cs">
+      <DependentUpon>HistoriaDokumentuPozycjiDziennika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\DokumentyOczekujace.aspx.cs">
+      <DependentUpon>DokumentyOczekujace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\DokumentyOczekujace.aspx.designer.cs">
+      <DependentUpon>DokumentyOczekujace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegration.aspx.cs">
+      <DependentUpon>ePUAPIntegration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegration.aspx.designer.cs">
+      <DependentUpon>ePUAPIntegration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennikaSimple.aspx.cs">
+      <DependentUpon>PrzegladDziennikaSimple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennikaSimple.aspx.designer.cs">
+      <DependentUpon>PrzegladDziennikaSimple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\Actions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Actions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\BudowaDefinicjiRejestru.aspx.cs">
+      <DependentUpon>BudowaDefinicjiRejestru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\BudowaDefinicjiRejestru.aspx.designer.cs">
+      <DependentUpon>BudowaDefinicjiRejestru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DataMatrixPrint.aspx.cs">
+      <DependentUpon>DataMatrixPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DataMatrixPrint.aspx.designer.cs">
+      <DependentUpon>DataMatrixPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\HistoriaInteresantow.aspx.cs">
+      <DependentUpon>HistoriaInteresantow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\HistoriaInteresantow.aspx.designer.cs">
+      <DependentUpon>HistoriaInteresantow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\LayoutConfiguration.aspx.cs">
+      <DependentUpon>LayoutConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\LayoutConfiguration.aspx.designer.cs">
+      <DependentUpon>LayoutConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRokTworzRejestry.aspx.cs">
+      <DependentUpon>NowyRokTworzRejestry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRokTworzRejestry.aspx.designer.cs">
+      <DependentUpon>NowyRokTworzRejestry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRokTworzTeczki.aspx.cs">
+      <DependentUpon>NowyRokTworzTeczki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRokTworzTeczki.aspx.designer.cs">
+      <DependentUpon>NowyRokTworzTeczki.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRok.aspx.cs">
+      <DependentUpon>NowyRok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\NowyRok.aspx.designer.cs">
+      <DependentUpon>NowyRok.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DniWolneOdPracy.aspx.cs">
+      <DependentUpon>DniWolneOdPracy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DniWolneOdPracy.aspx.designer.cs">
+      <DependentUpon>DniWolneOdPracy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\OCRConfiguration.aspx.cs">
+      <DependentUpon>OCRConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\OCRConfiguration.aspx.designer.cs">
+      <DependentUpon>OCRConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\RSSConfiguration.aspx.cs">
+      <DependentUpon>RSSConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\RSSConfiguration.aspx.designer.cs">
+      <DependentUpon>RSSConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\SMSConfig.aspx.cs">
+      <DependentUpon>SMSConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\SMSConfig.aspx.designer.cs">
+      <DependentUpon>SMSConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\SzablonMSO.aspx.cs">
+      <DependentUpon>SzablonMSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\SzablonMSO.aspx.designer.cs">
+      <DependentUpon>SzablonMSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\GrupaTeczki.aspx.cs">
+      <DependentUpon>GrupaTeczki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\GrupaTeczki.aspx.designer.cs">
+      <DependentUpon>GrupaTeczki.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\Komunikat.aspx.cs">
+      <DependentUpon>Komunikat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\Komunikat.aspx.designer.cs">
+      <DependentUpon>Komunikat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DaneUrzedu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DaneUrzedu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DaneUrzedu.aspx.designer.cs">
+      <DependentUpon>DaneUrzedu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DziennikKancelaryjny.aspx.cs">
+      <DependentUpon>DziennikKancelaryjny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\DziennikKancelaryjny.aspx.designer.cs">
+      <DependentUpon>DziennikKancelaryjny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaGrup.aspx.cs">
+      <DependentUpon>edycjaGrup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaGrup.aspx.designer.cs">
+      <DependentUpon>edycjaGrup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaInteresanta.aspx.cs">
+      <DependentUpon>edycjaInteresanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaInteresanta.aspx.designer.cs">
+      <DependentUpon>edycjaInteresanta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\EdycjaInteresantow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EdycjaInteresantow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\EdycjaInteresantow.aspx.designer.cs">
+      <DependentUpon>EdycjaInteresantow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaJRWA.aspx.cs">
+      <DependentUpon>edycjaJRWA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaJRWA.aspx.designer.cs">
+      <DependentUpon>edycjaJRWA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\EdycjaKategoriiInteresantow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EdycjaKategoriiInteresantow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\EdycjaKategoriiInteresantow.aspx.designer.cs">
+      <DependentUpon>EdycjaKategoriiInteresantow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaTeczek.aspx.cs">
+      <DependentUpon>edycjaTeczek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaTeczek.aspx.designer.cs">
+      <DependentUpon>edycjaTeczek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaUprawnien.aspx.cs">
+      <DependentUpon>edycjaUprawnien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaUprawnien.aspx.designer.cs">
+      <DependentUpon>edycjaUprawnien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaUzytkownikow.aspx.cs">
+      <DependentUpon>edycjaUzytkownikow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaUzytkownikow.aspx.designer.cs">
+      <DependentUpon>edycjaUzytkownikow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\historiaLogowania.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>historiaLogowania.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\historiaLogowania.aspx.designer.cs">
+      <DependentUpon>historiaLogowania.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaDefinicjiRejestrow.aspx.cs">
+      <DependentUpon>listaDefinicjiRejestrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaDefinicjiRejestrow.aspx.designer.cs">
+      <DependentUpon>listaDefinicjiRejestrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaRejestrow.aspx.cs">
+      <DependentUpon>listaRejestrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaRejestrow.aspx.designer.cs">
+      <DependentUpon>listaRejestrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaWszystkichDokumentowISpraw.aspx.cs">
+      <DependentUpon>listaWszystkichDokumentowISpraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\listaWszystkichDokumentowISpraw.aspx.designer.cs">
+      <DependentUpon>listaWszystkichDokumentowISpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\MainAdministrativePage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MainAdministrativePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\MainAdministrativePage.aspx.designer.cs">
+      <DependentUpon>MainAdministrativePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\printJRWA.aspx.cs">
+      <DependentUpon>printJRWA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\printJRWA.aspx.designer.cs">
+      <DependentUpon>printJRWA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\rodzajeDokumentow.aspx.cs">
+      <DependentUpon>rodzajeDokumentow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\rodzajeDokumentow.aspx.designer.cs">
+      <DependentUpon>rodzajeDokumentow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\RodzajeSpraw.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RodzajeSpraw.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaRejestru.aspx.cs">
+      <DependentUpon>edycjaRejestru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\edycjaRejestru.aspx.designer.cs">
+      <DependentUpon>edycjaRejestru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieAkcjami.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZarzadzanieAkcjami.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieAkcjami.aspx.designer.cs">
+      <DependentUpon>ZarzadzanieAkcjami.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieInteresantami.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZarzadzanieInteresantami.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieInteresantami.aspx.designer.cs">
+      <DependentUpon>ZarzadzanieInteresantami.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRejestrami.aspx.cs">
+      <DependentUpon>ZarzadzanieRejestrami.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRejestrami.aspx.designer.cs">
+      <DependentUpon>ZarzadzanieRejestrami.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRodzajamiSpraw.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZarzadzanieRodzajamiSpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRodzajamiSpraw.aspx.designer.cs">
+      <DependentUpon>ZarzadzanieRodzajamiSpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\MetrykaSprawy.aspx.cs">
+      <DependentUpon>MetrykaSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\MetrykaSprawy.aspx.designer.cs">
+      <DependentUpon>MetrykaSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\PotwierdzenieRejestracji.aspx.cs">
+      <DependentUpon>PotwierdzenieRejestracji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\PotwierdzenieRejestracji.aspx.designer.cs">
+      <DependentUpon>PotwierdzenieRejestracji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\PrzegladanieRaportow.aspx.cs">
+      <DependentUpon>PrzegladanieRaportow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\PrzegladanieRaportow.aspx.designer.cs">
+      <DependentUpon>PrzegladanieRaportow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\RaportTeczki.aspx.cs">
+      <DependentUpon>RaportTeczki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\RaportTeczki.aspx.designer.cs">
+      <DependentUpon>RaportTeczki.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\WysylkaRaportow.aspx.cs">
+      <DependentUpon>WysylkaRaportow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Raporty\WysylkaRaportow.aspx.designer.cs">
+      <DependentUpon>WysylkaRaportow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\RKW\Przegladanie.aspx.cs">
+      <DependentUpon>Przegladanie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\RKW\Przegladanie.aspx.designer.cs">
+      <DependentUpon>Przegladanie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\RKW\Rejestracja.aspx.cs">
+      <DependentUpon>Rejestracja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\RKW\Rejestracja.aspx.designer.cs">
+      <DependentUpon>Rejestracja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Statystyki\PrzegladanieStatystyk.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PrzegladanieStatystyk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Statystyki\PrzegladanieStatystyk.aspx.designer.cs">
+      <DependentUpon>PrzegladanieStatystyk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\Statystyki\RaportDokumentowISpraw.aspx.cs">
+      <DependentUpon>RaportDokumentowISpraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\Statystyki\RaportDokumentowISpraw.aspx.designer.cs">
+      <DependentUpon>RaportDokumentowISpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyResourceProvider.cs" />
+    <Compile Include="Classes\ePUAPDocument.cs" />
+    <Compile Include="Classes\ePUAPHelper.cs" />
+    <Compile Include="Classes\ePUAPPullMock.cs" />
+    <Compile Include="Classes\LayoutConfig.cs" />
+    <Compile Include="Classes\RegistryHelper.cs" />
+    <Compile Include="Classes\ReportService.cs" />
+    <Compile Include="Controls\AktualneZastepstwa.ascx.cs">
+      <DependentUpon>AktualneZastepstwa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AktualneZastepstwa.ascx.designer.cs">
+      <DependentUpon>AktualneZastepstwa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AktualneZastepstwaPrzelacz.ascx.cs">
+      <DependentUpon>AktualneZastepstwaPrzelacz.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AktualneZastepstwaPrzelacz.ascx.designer.cs">
+      <DependentUpon>AktualneZastepstwaPrzelacz.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CaseNav.ascx.cs">
+      <DependentUpon>CaseNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CaseNav.ascx.designer.cs">
+      <DependentUpon>CaseNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DefinicjaZastepstw.ascx.cs">
+      <DependentUpon>DefinicjaZastepstw.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DefinicjaZastepstw.ascx.designer.cs">
+      <DependentUpon>DefinicjaZastepstw.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DocumentItemWordUploader.ascx.cs">
+      <DependentUpon>DocumentItemWordUploader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentItemWordUploader.ascx.designer.cs">
+      <DependentUpon>DocumentItemWordUploader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EdycjaInteresantow.ascx.cs">
+      <DependentUpon>EdycjaInteresantow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EdycjaInteresantow.ascx.designer.cs">
+      <DependentUpon>EdycjaInteresantow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ObjectDetailsView.ascx.cs">
+      <DependentUpon>ObjectDetailsView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ObjectDetailsView.ascx.designer.cs">
+      <DependentUpon>ObjectDetailsView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeAktow.ascx.cs">
+      <DependentUpon>OperacjeAktow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeAktow.ascx.designer.cs">
+      <DependentUpon>OperacjeAktow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeFormularza.ascx.cs">
+      <DependentUpon>OperacjeFormularza.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeFormularza.ascx.designer.cs">
+      <DependentUpon>OperacjeFormularza.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomFormWrapperControl.ascx.cs">
+      <DependentUpon>CustomFormWrapperControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomFormWrapperControl.ascx.designer.cs">
+      <DependentUpon>CustomFormWrapperControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DocumentItemUploader.ascx.cs">
+      <DependentUpon>DocumentItemUploader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentItemUploader.ascx.designer.cs">
+      <DependentUpon>DocumentItemUploader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EdycjaPINu.ascx.cs">
+      <DependentUpon>EdycjaPINu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EdycjaPINu.ascx.designer.cs">
+      <DependentUpon>EdycjaPINu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ESPDocumentPreview.ascx.cs">
+      <DependentUpon>ESPDocumentPreview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ESPDocumentPreview.ascx.designer.cs">
+      <DependentUpon>ESPDocumentPreview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Interesant.ascx.cs">
+      <DependentUpon>Interesant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Interesant.ascx.designer.cs">
+      <DependentUpon>Interesant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KryteriaWyszukiwaniaWRejestrze.ascx.cs">
+      <DependentUpon>KryteriaWyszukiwaniaWRejestrze.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\KryteriaWyszukiwaniaWRejestrze.ascx.designer.cs">
+      <DependentUpon>KryteriaWyszukiwaniaWRejestrze.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListaInteresantow.ascx.cs">
+      <DependentUpon>ListaInteresantow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ListaInteresantow.ascx.designer.cs">
+      <DependentUpon>ListaInteresantow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MasterHeader.ascx.cs">
+      <DependentUpon>MasterHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MasterHeader.ascx.designer.cs">
+      <DependentUpon>MasterHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumeracjaSpraw.ascx.cs">
+      <DependentUpon>NumeracjaSpraw.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NumeracjaSpraw.ascx.designer.cs">
+      <DependentUpon>NumeracjaSpraw.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeInteresantow.ascx.cs">
+      <DependentUpon>OperacjeInteresantow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeInteresantow.ascx.designer.cs">
+      <DependentUpon>OperacjeInteresantow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjePaneluAdministracyjnego.ascx.cs">
+      <DependentUpon>OperacjePaneluAdministracyjnego.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjePaneluAdministracyjnego.ascx.designer.cs">
+      <DependentUpon>OperacjePaneluAdministracyjnego.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeRejestrow.ascx.cs">
+      <DependentUpon>OperacjeRejestrow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeRejestrow.ascx.designer.cs">
+      <DependentUpon>OperacjeRejestrow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScanPreviewControl.ascx.cs">
+      <DependentUpon>ScanPreviewControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScanPreviewControl.ascx.designer.cs">
+      <DependentUpon>ScanPreviewControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TypInteresanta.ascx.cs">
+      <DependentUpon>TypInteresanta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TypInteresanta.ascx.designer.cs">
+      <DependentUpon>TypInteresanta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\PrzypisanieDokumentuDoSprawy.aspx.cs">
+      <DependentUpon>PrzypisanieDokumentuDoSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\PrzypisanieDokumentuDoSprawy.aspx.designer.cs">
+      <DependentUpon>PrzypisanieDokumentuDoSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CaseContextItem.ascx.cs">
+      <DependentUpon>CaseContextItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CaseContextItem.ascx.designer.cs">
+      <DependentUpon>CaseContextItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeDokumentu.ascx.cs">
+      <DependentUpon>OperacjeDokumentu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeDokumentu.ascx.designer.cs">
+      <DependentUpon>OperacjeDokumentu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OperacjeSprawy.ascx.cs">
+      <DependentUpon>OperacjeSprawy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OperacjeSprawy.ascx.designer.cs">
+      <DependentUpon>OperacjeSprawy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WrapLabel.ascx.cs">
+      <DependentUpon>WrapLabel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WrapLabel.ascx.designer.cs">
+      <DependentUpon>WrapLabel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DataMatrix.aspx.cs">
+      <DependentUpon>DataMatrix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataMatrix.aspx.designer.cs">
+      <DependentUpon>DataMatrix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawny.aspx.cs">
+      <DependentUpon>AktPrawny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawny.aspx.designer.cs">
+      <DependentUpon>AktPrawny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\AktyPrawne.aspx.cs">
+      <DependentUpon>AktyPrawne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\AktyPrawne.aspx.designer.cs">
+      <DependentUpon>AktyPrawne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawnyHistoria.aspx.cs">
+      <DependentUpon>AktPrawnyHistoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawnyHistoria.aspx.designer.cs">
+      <DependentUpon>AktPrawnyHistoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawnyXml.aspx.cs">
+      <DependentUpon>AktPrawnyXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\AktPrawnyXml.aspx.designer.cs">
+      <DependentUpon>AktPrawnyXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\KodyDokumentu.aspx.cs">
+      <DependentUpon>KodyDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\KodyDokumentu.aspx.designer.cs">
+      <DependentUpon>KodyDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSodaChatUsers.aspx.cs">
+      <DependentUpon>eSodaChatUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSodaChatUsers.aspx.designer.cs">
+      <DependentUpon>eSodaChatUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSodaChatNewMessageNotify.aspx.cs">
+      <DependentUpon>eSodaChatNewMessageNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSodaChatNewMessageNotify.aspx.designer.cs">
+      <DependentUpon>eSodaChatNewMessageNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\AkcjeDokumentu.aspx.cs">
+      <DependentUpon>AkcjeDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\AkcjeDokumentu.aspx.designer.cs">
+      <DependentUpon>AkcjeDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\ListaAplikacji.aspx.cs">
+      <DependentUpon>ListaAplikacji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\ListaAplikacji.aspx.designer.cs">
+      <DependentUpon>ListaAplikacji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BaseContentPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\MonitorUrzadzen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\TiffManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\WebSessionProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\XPathHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentContextItem.ascx.cs">
+      <DependentUpon>DocumentContextItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentContextItem.ascx.designer.cs">
+      <DependentUpon>DocumentContextItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PodgladMetadanych.cs" />
+    <Compile Include="Aplikacje\DziennikKancelaryjny\DodawanieSkanow.aspx.cs">
+      <DependentUpon>DodawanieSkanow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\DodawanieSkanow.aspx.designer.cs">
+      <DependentUpon>DodawanieSkanow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzHistoria.aspx.cs">
+      <DependentUpon>FormularzHistoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzHistoria.aspx.designer.cs">
+      <DependentUpon>FormularzHistoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzDoc.aspx.cs">
+      <DependentUpon>FormularzDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzDoc.aspx.designer.cs">
+      <DependentUpon>FormularzDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzXml.aspx.cs">
+      <DependentUpon>FormularzXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzXml.aspx.designer.cs">
+      <DependentUpon>FormularzXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzWidokGlowny.aspx.cs">
+      <DependentUpon>FormularzWidokGlowny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\FormularzWidokGlowny.aspx.designer.cs">
+      <DependentUpon>FormularzWidokGlowny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\Formularz.aspx.cs">
+      <DependentUpon>Formularz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\Formularz.aspx.designer.cs">
+      <DependentUpon>Formularz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\Dokument.aspx.cs">
+      <DependentUpon>Dokument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\Dokument.aspx.designer.cs">
+      <DependentUpon>Dokument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\EdycjaPozycjiDziennika.aspx.cs">
+      <DependentUpon>EdycjaPozycjiDziennika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\EdycjaPozycjiDziennika.aspx.designer.cs">
+      <DependentUpon>EdycjaPozycjiDziennika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\EdycjaSkanowPozycjiDziennika.aspx.cs">
+      <DependentUpon>EdycjaSkanowPozycjiDziennika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\EdycjaSkanowPozycjiDziennika.aspx.designer.cs">
+      <DependentUpon>EdycjaSkanowPozycjiDziennika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\HistoriaDokumentu.aspx.cs">
+      <DependentUpon>HistoriaDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\HistoriaDokumentu.aspx.designer.cs">
+      <DependentUpon>HistoriaDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\RejestryDokumentu.aspx.cs">
+      <DependentUpon>RejestryDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\RejestryDokumentu.aspx.designer.cs">
+      <DependentUpon>RejestryDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\SkladnikDoc.aspx.cs">
+      <DependentUpon>SkladnikDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\SkladnikDoc.aspx.designer.cs">
+      <DependentUpon>SkladnikDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSodaChat.aspx.cs">
+      <DependentUpon>eSodaChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSodaChat.aspx.designer.cs">
+      <DependentUpon>eSodaChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSodaChatNotify.aspx.cs">
+      <DependentUpon>eSodaChatNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSodaChatNotify.aspx.designer.cs">
+      <DependentUpon>eSodaChatNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Image.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\KonfiguratorUrzadzen.cs" />
+    <Compile Include="Aplikacje\PanelAdministracyjny\importUzytkownikow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>importUzytkownikow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\PanelAdministracyjny\importUzytkownikow.aspx.designer.cs">
+      <DependentUpon>importUzytkownikow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\SingleColumn.Master.cs">
+      <DependentUpon>SingleColumn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\SingleColumn.Master.designer.cs">
+      <DependentUpon>SingleColumn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\SingleColumnNoUpdatePanel.Master.cs">
+      <DependentUpon>SingleColumnNoUpdatePanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\SingleColumnNoUpdatePanel.Master.designer.cs">
+      <DependentUpon>SingleColumnNoUpdatePanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OczekujaceZadania.aspx.cs">
+      <DependentUpon>OczekujaceZadania.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OczekujaceZadania.aspx.designer.cs">
+      <DependentUpon>OczekujaceZadania.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OdbiorDokumentow.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>OdbiorDokumentow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OdbiorDokumentow.aspx.designer.cs">
+      <DependentUpon>OdbiorDokumentow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewESP.aspx.cs">
+      <DependentUpon>PreviewESP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreviewESP.aspx.designer.cs">
+      <DependentUpon>PreviewESP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennika.aspx.cs">
+      <DependentUpon>PrzegladDziennika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennika.aspx.designer.cs">
+      <DependentUpon>PrzegladDziennika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\PrzekierowanieDokumentu.aspx.cs">
+      <DependentUpon>PrzekierowanieDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\PrzekierowanieDokumentu.aspx.designer.cs">
+      <DependentUpon>PrzekierowanieDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumenty\SkladnikiDokumentu.aspx.cs">
+      <DependentUpon>SkladnikiDokumentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dokumenty\SkladnikiDokumentu.aspx.designer.cs">
+      <DependentUpon>SkladnikiDokumentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\SzczegolyPozycjiDziennika.aspx.cs">
+      <DependentUpon>SzczegolyPozycjiDziennika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aplikacje\DziennikKancelaryjny\SzczegolyPozycjiDziennika.aspx.designer.cs">
+      <DependentUpon>SzczegolyPozycjiDziennika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akcje\EdycjaRejestru.aspx.cs">
+      <DependentUpon>EdycjaRejestru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akcje\EdycjaRejestru.aspx.designer.cs">
+      <DependentUpon>EdycjaRejestru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rejestry\HistoriaRejestru.aspx.cs">
+      <DependentUpon>HistoriaRejestru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rejestry\HistoriaRejestru.aspx.designer.cs">
+      <DependentUpon>HistoriaRejestru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rejestry\ListaRejestrow.aspx.cs">
+      <DependentUpon>ListaRejestrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rejestry\ListaRejestrow.aspx.designer.cs">
+      <DependentUpon>ListaRejestrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rejestry\RejestrCentralny.aspx.cs">
+      <DependentUpon>RejestrCentralny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rejestry\RejestrCentralny.aspx.designer.cs">
+      <DependentUpon>RejestrCentralny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rejestry\RejestryDS.cs">
+      <DependentUpon>RejestryDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rejestry\RejestryDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RejestryDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RSS\oczekujaceDokumenty.aspx.cs">
+      <DependentUpon>oczekujaceDokumenty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RSS\oczekujaceDokumenty.aspx.designer.cs">
+      <DependentUpon>oczekujaceDokumenty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ePUAP.Skrytka.PullService\Reference1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ePUAP.Skrytka.Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="services\ChatService.asmx.cs">
+      <DependentUpon>ChatService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="services\eSoda.asmx.cs">
+      <DependentUpon>eSoda.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="services\MSOIntegrationService.asmx.cs">
+      <DependentUpon>MSOIntegrationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shared\error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\error2.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>error2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\error2.aspx.designer.cs">
+      <DependentUpon>error2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprawy\AkcjeSprawy.aspx.cs">
+      <DependentUpon>AkcjeSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sprawy\AkcjeSprawy.aspx.designer.cs">
+      <DependentUpon>AkcjeSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprawy\DokumentySprawy.aspx.cs">
+      <DependentUpon>DokumentySprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sprawy\DokumentySprawy.aspx.designer.cs">
+      <DependentUpon>DokumentySprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprawy\HistoriaSprawy.aspx.cs">
+      <DependentUpon>HistoriaSprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sprawy\HistoriaSprawy.aspx.designer.cs">
+      <DependentUpon>HistoriaSprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprawy\RejestrySprawy.aspx.cs">
+      <DependentUpon>RejestrySprawy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sprawy\RejestrySprawy.aspx.designer.cs">
+      <DependentUpon>RejestrySprawy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprawy\Sprawa.aspx.cs">
+      <DependentUpon>Sprawa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sprawy\Sprawa.aspx.designer.cs">
+      <DependentUpon>Sprawa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestPreview.aspx.cs">
+      <DependentUpon>TestPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPreview.aspx.designer.cs">
+      <DependentUpon>TestPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PemiESP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ReportingServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Wyszukiwarka\MojeDekretacje.aspx.cs">
+      <DependentUpon>MojeDekretacje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wyszukiwarka\MojeDekretacje.aspx.designer.cs">
+      <DependentUpon>MojeDekretacje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaDokumentow.aspx.cs">
+      <DependentUpon>WyszukiwarkaDokumentow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaDokumentow.aspx.designer.cs">
+      <DependentUpon>WyszukiwarkaDokumentow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaSpraw.aspx.cs">
+      <DependentUpon>WyszukiwarkaSpraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaSpraw.aspx.designer.cs">
+      <DependentUpon>WyszukiwarkaSpraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaLista.aspx.cs">
+      <DependentUpon>WyszukiwarkaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wyszukiwarka\WyszukiwarkaLista.aspx.designer.cs">
+      <DependentUpon>WyszukiwarkaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zastepstwa.aspx.cs">
+      <DependentUpon>Zastepstwa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zastepstwa.aspx.designer.cs">
+      <DependentUpon>Zastepstwa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZmianaHasla.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZmianaHasla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZmianaHasla.aspx.designer.cs">
+      <DependentUpon>ZmianaHasla.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Akcje\WykonanieCzynnosci.aspx" />
+    <Content Include="Akta\AktaSpraw.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaGrup.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaJRWA.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaTeczek.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaUprawnien.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaUzytkownikow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\HistoriaInteresantow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\LayoutConfiguration.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\MainAdministrativePage.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\rodzajeDokumentow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRodzajamiSpraw.aspx" />
+    <Content Include="Aplikacje\Raporty\MetrykaSprawy.aspx" />
+    <Content Include="Aplikacje\Raporty\PotwierdzenieRejestracji.aspx" />
+    <Content Include="Aplikacje\Raporty\RaportTeczki.aspx" />
+    <Content Include="Aplikacje\RKW\Przegladanie.aspx" />
+    <Content Include="Aplikacje\RKW\Rejestracja.aspx" />
+    <Content Include="App_Themes\StandardLayout\img\caseReport.png" />
+    <Content Include="App_Themes\StandardLayout\img\defaultLogo\empty.gif" />
+    <Content Include="App_Themes\StandardLayout\img\defaultLogo\logo1.png" />
+    <Content Include="App_Themes\StandardLayout\img\defaultLogo\logo2.png" />
+    <Content Include="App_Themes\StandardLayout\img\don_t_panic_button.jpg" />
+    <Content Include="App_Themes\StandardLayout\img\findDoc.png" />
+    <Content Include="App_Themes\StandardLayout\img\foundDoc.png" />
+    <Content Include="App_Themes\StandardLayout\img\notFoundDoc.png" />
+    <Content Include="App_Themes\StandardLayout\img\skany.png" />
+    <Content Include="App_Themes\StandardLayout\img\sort.gif" />
+    <Content Include="App_Themes\StandardLayout\img\sort.PNG" />
+    <Content Include="App_Themes\StandardLayout\img\stamp.png" />
+    <Content Include="Controls\NumeracjaSpraw.ascx" />
+    <Content Include="Controls\OperacjePaneluAdministracyjnego.ascx" />
+    <Content Include="Akcje\PrzypisanieDokumentuDoSprawy.aspx" />
+    <Content Include="App_Themes\StandardLayout\img\ajax-loader.gif" />
+    <Content Include="Controls\CaseContextItem.ascx" />
+    <Content Include="Controls\OperacjeDokumentu.ascx" />
+    <Content Include="Controls\OperacjeSprawy.ascx" />
+    <Content Include="Dokumenty\AkcjeDokumentu.aspx" />
+    <Content Include="Aplikacje\ListaAplikacji.aspx" />
+    <Content Include="App_Themes\StandardLayout\img\logoPEMI.png" />
+    <Content Include="App_Themes\StandardLayout\img\pleasewait.gif" />
+    <Content Include="App_Themes\StandardLayout\layout.css" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\DodawanieSkanow.aspx" />
+    <Content Include="Controls\DocumentContextItem.ascx" />
+    <Content Include="Dokumenty\Dokument.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\EdycjaPozycjiDziennika.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\EdycjaSkanowPozycjiDziennika.aspx" />
+    <Content Include="Dokumenty\HistoriaDokumentu.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="Image.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\importUzytkownikow.aspx" />
+    <Content Include="Logon.aspx" />
+    <Content Include="MasterPages\SingleColumn.Master" />
+    <Content Include="OczekujaceZadania.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennika.aspx" />
+    <Content Include="Akcje\PrzekierowanieDokumentu.aspx" />
+    <Content Include="Dokumenty\SkladnikiDokumentu.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\SzczegolyPozycjiDziennika.aspx" />
+    <Content Include="Rejestry\ListaRejestrow.aspx" />
+    <Content Include="Rejestry\RejestrCentralny.aspx" />
+    <None Include="Properties\PublishProfiles\eSoda DEV %28local%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LocalRelease.pubxml" />
+    <None Include="Service References\ePUAP.Skrytka.PullService\configuration.svcinfo" />
+    <None Include="Service References\ePUAP.Skrytka.PullService\configuration91.svcinfo" />
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.oczekujaceDokumentyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.pobierzNastepnyResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.potwierdzOdebranieResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ePUAP.Skrytka.PullService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference1.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ePUAP.Skrytka.Service\configuration.svcinfo" />
+    <None Include="Service References\ePUAP.Skrytka.Service\configuration91.svcinfo" />
+    <Content Include="Service References\ePUAP.Skrytka.Service\Pemi.Esoda.Web.UI.ePUAP.Skrytka.Service.OdpowiedzSkrytkiTyp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ePUAP.Skrytka.Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Shared\error.aspx" />
+    <Content Include="Sprawy\AkcjeSprawy.aspx" />
+    <Content Include="Sprawy\DokumentySprawy.aspx" />
+    <Content Include="Sprawy\HistoriaSprawy.aspx" />
+    <Content Include="Sprawy\Sprawa.aspx" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\dash.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\dashminus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\dashplus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\i.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\l.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\lminus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\lplus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\minus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\noexpand.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\plus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\r.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\rminus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\rplus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\t.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\tminus.gif" />
+    <Content Include="App_Themes\StandardLayout\TreeLineImages\tplus.gif" />
+    <Content Include="xslt\elements2attributes.xslt" />
+    <Content Include="xslt\historyItem.xslt" />
+    <Content Include="xslt\registryItem.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarcodeTool\BarcodeTool.csproj">
+      <Project>{A4D4C805-7F74-4018-9981-48661B4347D5}</Project>
+      <Name>BarcodeTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.Core\Pemi.Esoda.Core.csproj">
+      <Project>{F375D6C1-CA16-43C0-8C1A-A0D93A100330}</Project>
+      <Name>Pemi.Esoda.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.DataAccess\Pemi.Esoda.DataAccess.csproj">
+      <Project>{C0CC9207-1DF2-463D-9260-B100001A9BD8}</Project>
+      <Name>Pemi.Esoda.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.DTO\Pemi.Esoda.DTO.csproj">
+      <Project>{A285096C-58BD-4119-B4BF-24ADE55FC0C8}</Project>
+      <Name>Pemi.Esoda.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.Presenters\Pemi.Esoda.Presenters.csproj">
+      <Project>{34F72B60-EF90-4462-AFD6-7AEB4D3F01CE}</Project>
+      <Name>Pemi.Esoda.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.Tools\Pemi.Esoda.Tools.csproj">
+      <Project>{6EFBB705-9987-45E5-83E6-81001B27D1FD}</Project>
+      <Name>Pemi.Esoda.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Akcje\DaneDokumentu.xsc">
+      <DependentUpon>DaneDokumentu.xsd</DependentUpon>
+    </None>
+    <None Include="Akcje\DaneDokumentu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DaneDokumentu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Akcje\DaneDokumentu.xss">
+      <DependentUpon>DaneDokumentu.xsd</DependentUpon>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\Actions.xsc">
+      <DependentUpon>Actions.xsd</DependentUpon>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\Actions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Actions.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\Actions.xss">
+      <DependentUpon>Actions.xsd</DependentUpon>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\RodzajeSpraw.xsc">
+      <DependentUpon>RodzajeSpraw.xsd</DependentUpon>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\RodzajeSpraw.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RodzajeSpraw.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Aplikacje\PanelAdministracyjny\RodzajeSpraw.xss">
+      <DependentUpon>RodzajeSpraw.xsd</DependentUpon>
+    </None>
+    <Content Include="Akcje\DekretacjaDokumentuWielokrotna.aspx" />
+    <Content Include="Akcje\edycjaDokumentu.aspx" />
+    <Content Include="Akcje\edycjaSprawy.aspx" />
+    <Content Include="Akcje\DekretacjaDokumentu.aspx" />
+    <Content Include="Akcje\NowyDokumentLogiczny.aspx" />
+    <Content Include="Akcje\PowiadomienieSMS.aspx" />
+    <Content Include="Akcje\PrzekazanieSprawy.aspx" />
+    <Content Include="Akcje\SelectRegistry.aspx" />
+    <Content Include="Akcje\SzczegolyAkcji.aspx" />
+    <Content Include="Akcje\UsuniecieDokumentuZeSprawy.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegrationFileDownload.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\HistoriaDokumentuPozycjiDziennika.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\DokumentyOczekujace.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\ePUAPIntegration.aspx" />
+    <Content Include="Aplikacje\DziennikKancelaryjny\PrzegladDziennikaSimple.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\BudowaDefinicjiRejestru.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\DataMatrixPrint.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\NowyRokTworzRejestry.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\NowyRokTworzTeczki.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\NowyRok.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\DniWolneOdPracy.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\OCRConfiguration.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\RSSConfiguration.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\SMSConfig.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\SzablonMSO.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\GrupaTeczki.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\Komunikat.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\DaneUrzedu.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\DziennikKancelaryjny.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaInteresanta.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\EdycjaInteresantow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\EdycjaKategoriiInteresantow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\historiaLogowania.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\listaDefinicjiRejestrow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\listaRejestrow.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\listaWszystkichDokumentowISpraw.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\printJRWA.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\edycjaRejestru.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\xsltGroups.xslt" />
+    <Content Include="Aplikacje\PanelAdministracyjny\xsltJrwaPrint.xslt" />
+    <Content Include="Aplikacje\PanelAdministracyjny\ZarzadzanieAkcjami.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\ZarzadzanieInteresantami.aspx" />
+    <Content Include="Aplikacje\PanelAdministracyjny\ZarzadzanieRejestrami.aspx" />
+    <Content Include="Aplikacje\Raporty\PrzegladanieRaportow.aspx" />
+    <Content Include="Aplikacje\Raporty\WysylkaRaportow.aspx" />
+    <Content Include="Aplikacje\Statystyki\PrzegladanieStatystyk.aspx" />
+    <Content Include="Aplikacje\Statystyki\RaportDokumentowISpraw.aspx" />
+    <Content Include="App_Themes\StandardLayout\img\calendarIcon.png" />
+    <Content Include="App_Themes\StandardLayout\img\checkedIcon.png" />
+    <Content Include="App_Themes\StandardLayout\img\dokument.PNG" />
+    <Content Include="App_Themes\StandardLayout\img\legend.png" />
+    <Content Include="App_Themes\StandardLayout\img\magglass.jpg" />
+    <Content Include="App_Themes\StandardLayout\img\rss.png" />
+    <Content Include="App_Themes\StandardLayout\img\sprawa.PNG" />
+    <Content Include="App_Themes\StandardLayout\img\tabbkactive.Png" />
+    <Content Include="App_Themes\StandardLayout\img\tabbkinactive.Png" />
+    <Content Include="App_Themes\StandardLayout\img\word07.jpg" />
+    <Content Include="App_Themes\StandardLayout\img\WordIcon.jpg" />
+    <Content Include="Controls\AktualneZastepstwa.ascx" />
+    <Content Include="Controls\AktualneZastepstwaPrzelacz.ascx" />
+    <Content Include="Controls\CaseNav.ascx" />
+    <Content Include="Controls\DefinicjaZastepstw.ascx" />
+    <Content Include="Controls\DocumentItemWordUploader.ascx" />
+    <Content Include="Controls\EdycjaInteresantow.ascx" />
+    <Content Include="Controls\ObjectDetailsView.ascx" />
+    <Content Include="Controls\OperacjeAktow.ascx" />
+    <Content Include="Controls\OperacjeFormularza.ascx" />
+    <Content Include="Controls\CustomFormWrapperControl.ascx" />
+    <Content Include="Controls\DocumentItemUploader.ascx" />
+    <Content Include="Controls\EdycjaPINu.ascx" />
+    <Content Include="Controls\ESPDocumentPreview.ascx" />
+    <Content Include="Controls\Interesant.ascx" />
+    <Content Include="Controls\KryteriaWyszukiwaniaWRejestrze.ascx" />
+    <Content Include="Controls\ListaInteresantow.ascx" />
+    <Content Include="Controls\MasterHeader.ascx" />
+    <Content Include="Controls\OperacjeInteresantow.ascx" />
+    <Content Include="Controls\OperacjeRejestrow.ascx" />
+    <Content Include="Controls\ScanPreviewControl.ascx" />
+    <Content Include="Controls\TypInteresanta.ascx" />
+    <Content Include="Controls\WrapLabel.ascx" />
+    <Content Include="DataMatrix.aspx" />
+    <Content Include="Dokumenty\AktPrawny.aspx" />
+    <Content Include="Dokumenty\AktyPrawne.aspx" />
+    <Content Include="Dokumenty\AktPrawnyHistoria.aspx" />
+    <Content Include="Dokumenty\AktPrawnyXml.aspx" />
+    <Content Include="Dokumenty\KodyDokumentu.aspx" />
+    <Content Include="eSodaChatUsers.aspx" />
+    <Content Include="eSodaChatNewMessageNotify.aspx" />
+    <Content Include="Dokumenty\FormularzHistoria.aspx" />
+    <Content Include="Dokumenty\FormularzDoc.aspx" />
+    <Content Include="Dokumenty\FormularzXml.aspx" />
+    <Content Include="Dokumenty\FormularzWidokGlowny.aspx" />
+    <Content Include="Dokumenty\Formularz.aspx" />
+    <Content Include="Dokumenty\RejestryDokumentu.aspx" />
+    <Content Include="Dokumenty\SkladnikDoc.aspx" />
+    <Content Include="eSodaChat.aspx" />
+    <Content Include="eSodaChatNotify.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="konfiguracjaSkanerow.xml" />
+    <Content Include="MasterPages\SingleColumnNoUpdatePanel.Master" />
+    <Content Include="OdbiorDokumentow.aspx" />
+    <Content Include="Akcje\EdycjaRejestru.aspx" />
+    <Content Include="PreviewESP.aspx" />
+    <Content Include="Rejestry\HistoriaRejestru.aspx" />
+    <Content Include="appSettings.section.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="connectionStrings.local.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.oczekujaceDokumentyResponse.datasource" />
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.pobierzNastepnyResponse.datasource" />
+    <Content Include="Service References\ePUAP.Skrytka.PullService\Pemi.Esoda.Web.UI.ePUAP.Skrytka.PullService.potwierdzOdebranieResponse.datasource" />
+    <None Include="Service References\ePUAP.Skrytka.Service\obiektyExt.xsd" />
+    <Content Include="RSS\oczekujaceDokumenty.aspx" />
+    <Content Include="services\ChatService.asmx" />
+    <Content Include="services\eSoda.asmx" />
+    <Content Include="services\MSOIntegrationService.asmx" />
+    <Content Include="Shared\error2.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rejestry\RejestryDS.xsc">
+      <DependentUpon>RejestryDS.xsd</DependentUpon>
+    </None>
+    <None Include="Rejestry\RejestryDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RejestryDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rejestry\RejestryDS.xss">
+      <DependentUpon>RejestryDS.xsd</DependentUpon>
+    </None>
+    <Content Include="Sprawy\RejestrySprawy.aspx" />
+    <None Include="Service References\ePUAP.Skrytka.PullService\obiektypk.xsd" />
+    <None Include="Service References\ePUAP.Skrytka.PullService\pull.wsdl" />
+    <None Include="Service References\ePUAP.Skrytka.Service\obiektypk.xsd" />
+    <None Include="Service References\ePUAP.Skrytka.Service\skrytka.wsdl" />
+    <None Include="Web References\PemiESP\espwebservice.disco" />
+    <None Include="Web References\PemiESP\espwebservice.wsdl" />
+    <None Include="Web References\PemiESP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReportingServices\DocumentMapNode.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportingServices\ExecutionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportingServices\ExecutionInfo2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportingServices\Extension.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReportingServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReportingServices\ReportExecution2005.wsdl" />
+    <None Include="Web References\ReportingServices\Warning.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Content Include="TestPreview.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Wyszukiwarka\MojeDekretacje.aspx" />
+    <Content Include="Wyszukiwarka\WyszukiwarkaDokumentow.aspx" />
+    <Content Include="Wyszukiwarka\WyszukiwarkaSpraw.aspx" />
+    <Content Include="Wyszukiwarka\WyszukiwarkaLista.aspx" />
+    <Content Include="xslt\registryView.xslt" />
+    <Content Include="Zastepstwa.aspx" />
+    <Content Include="ZmianaHasla.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="D:\ReportExecution2005.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReportingServices\</RelPath>
+      <UpdateFromURL>D:\ReportExecution2005.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Pemi_Esoda_Web_UI_ReportingServices_ReportExecutionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://alfatv.pemi.pl/espwebservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PemiESP\</RelPath>
+      <UpdateFromURL>http://alfatv.pemi.pl/espwebservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Pemi_Esoda_Web_UI_PemiESP_ESPWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ePUAP.Skrytka.PullService\" />
+    <WCFMetadataStorage Include="Service References\ePUAP.Skrytka.Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\StandardLayout\logos\" />
+    <Folder Include="CustomForms\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56315</DevelopmentServerPort>
+          <DevelopmentServerVPath>/esoda</DevelopmentServerVPath>
+          <IISUrl>http://localhost/esoda</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

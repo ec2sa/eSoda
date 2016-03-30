@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://pemi.esoda.esp/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://pemi.esoda.esp/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://pemi.esoda.esp/">
+      <s:element name="GetAwaitingDocuments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAwaitingDocumentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAwaitingDocumentsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDocumentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmDocumentReceive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocumentID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmDocumentReceiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConfirmDocumentReceiveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAwaitingDocumentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAwaitingDocuments" />
+  </wsdl:message>
+  <wsdl:message name="GetAwaitingDocumentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAwaitingDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDocument" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmDocumentReceiveSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmDocumentReceive" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmDocumentReceiveSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmDocumentReceiveResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ESPWebServiceSoap">
+    <wsdl:operation name="GetAwaitingDocuments">
+      <wsdl:input message="tns:GetAwaitingDocumentsSoapIn" />
+      <wsdl:output message="tns:GetAwaitingDocumentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocument">
+      <wsdl:input message="tns:GetDocumentSoapIn" />
+      <wsdl:output message="tns:GetDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentReceive">
+      <wsdl:input message="tns:ConfirmDocumentReceiveSoapIn" />
+      <wsdl:output message="tns:ConfirmDocumentReceiveSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ESPWebServiceSoap" type="tns:ESPWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAwaitingDocuments">
+      <soap:operation soapAction="http://pemi.esoda.esp/GetAwaitingDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocument">
+      <soap:operation soapAction="http://pemi.esoda.esp/GetDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentReceive">
+      <soap:operation soapAction="http://pemi.esoda.esp/ConfirmDocumentReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ESPWebServiceSoap12" type="tns:ESPWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAwaitingDocuments">
+      <soap12:operation soapAction="http://pemi.esoda.esp/GetAwaitingDocuments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocument">
+      <soap12:operation soapAction="http://pemi.esoda.esp/GetDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentReceive">
+      <soap12:operation soapAction="http://pemi.esoda.esp/ConfirmDocumentReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ESPWebService">
+    <wsdl:port name="ESPWebServiceSoap" binding="tns:ESPWebServiceSoap">
+      <soap:address location="http://alfatv.pemi.pl/espwebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ESPWebServiceSoap12" binding="tns:ESPWebServiceSoap12">
+      <soap12:address location="http://alfatv.pemi.pl/espwebservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

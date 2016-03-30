@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="MSOIntegrationService.asmx.cs" Class="Pemi.Esoda.Web.Services.MSOIntegrationService" %>

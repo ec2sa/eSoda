@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ESoda">
+  <DataContextMoniker Name="/ESodaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="67b2684b-0d79-4472-83d6-ff8faf703488" absoluteBounds="4.625, 0.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/ESodaDataContext/Cases" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3edf2ba6-3542-40c9-8cfa-0d7c359608e7" absoluteBounds="4.6400000000000006, 1.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95e79a56-f5a6-4481-a66c-526a68616647" absoluteBounds="7.5, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ESodaDataContext/CentralRegistryType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57dd2f9e-244e-40bd-8a13-54c4ef738883" absoluteBounds="7.515, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="234ac12d-17f2-4de2-85ba-da74d1a9c0e5" absoluteBounds="1.5, 2.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ESodaDataContext/DataForCentralRegistry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c20993e1-ea7e-4691-a998-75ce1a11e7fe" absoluteBounds="1.515, 3.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6412c7c7-7747-4418-973e-42f6272d19f3" absoluteBounds="8.375, 3.75, 2, 3.1170068359375">
+      <DataClassMoniker Name="/ESodaDataContext/CentralRegistry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8efd70e9-d783-48e0-a476-57cb93e700bb" absoluteBounds="8.39, 4.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.9375 : 1.94399251302083); (8.9375 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ESodaDataContext/CentralRegistryType/CentralRegistryType_CentralRegistry" />
+      <nodes>
+        <classShapeMoniker Id="95e79a56-f5a6-4481-a66c-526a68616647" />
+        <classShapeMoniker Id="6412c7c7-7747-4418-973e-42f6272d19f3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

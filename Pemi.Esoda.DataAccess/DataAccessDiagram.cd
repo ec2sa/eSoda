@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Pemi.Esoda.DataAccess.DataAccessLogEntry">
+    <Position X="2.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataAccessLogEntry.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DataAccess.DocumentItemDAO">
+    <Position X="8.25" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>DocumentItemDAO.cs</FileName>
+      <HashCode>AAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DataAccess.ItemStorageFactory">
+    <Position X="2.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Factories\ItemStorageFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DataAccess.FileSystemItemStorage" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <FileName>FileSystemItemStorage.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAiAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pemi.Esoda.DataAccess.RegistryDAO">
+    <Position X="8.25" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>RegistryDAO.cs</FileName>
+      <HashCode>AABAABAQAAAAgEAQAAAAAIAQQAAAAABCAAAABABBABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DataAccess.ScansDAO">
+    <Position X="5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ScansDAO.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pemi.Esoda.DataAccess.IItemStorage">
+    <Position X="2.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IItemStorage.cs</FileName>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

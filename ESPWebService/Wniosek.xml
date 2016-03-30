@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<wnio:Dokument xmlns:oso="http://crd.gov.pl/xml/schematy/osoba/2008/05/09/" xmlns:adr="http://crd.gov.pl/xml/schematy/adres/2008/05/09/" xmlns:wnio="http://crd.gov.pl/wzor/2008/05/09/3/" xmlns:inst="http://crd.gov.pl/xml/schematy/instytucja/2008/05/09/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://crd.gov.pl/xml/schematy/meta/2008/05/09/" xmlns:str="http://crd.gov.pl/xml/schematy/struktura/2008/05/09/" xsi:schemaLocation="http://crd.gov.pl/wzor/2008/05/09/3/ http://crd.gov.pl/wzor/2008/05/09/3/schemat.xsd">
+  <wnio:OpisDokumentu>
+    <meta:Data typDaty="dostepnyPo">
+      <meta:Czas>2008-05-09</meta:Czas>
+    </meta:Data>
+  </wnio:OpisDokumentu>
+  <wnio:DaneDokumentu>
+    <str:Adresaci>
+      <meta:Podmiot>
+        <inst:Instytucja>
+          <inst:NazwaInstytucji>Urz&#261;d</inst:NazwaInstytucji>
+          <adr:Adres>
+            <adr:KodPocztowy>02-020</adr:KodPocztowy>
+            <adr:Poczta>Wwa</adr:Poczta>
+            <adr:Miejscowosc>Warszawa</adr:Miejscowosc>
+            <adr:Ulica>Cudowna</adr:Ulica>
+            <adr:Budynek>12</adr:Budynek>
+            <adr:Lokal>1</adr:Lokal>
+          </adr:Adres>
+        </inst:Instytucja>
+      </meta:Podmiot>
+    </str:Adresaci>
+    <str:Nadawcy>
+      <meta:Podmiot>
+        <inst:Instytucja>
+          <inst:IdInstytucji>
+            <inst:NIP>0123456789</inst:NIP>
+          </inst:IdInstytucji>
+          <inst:IdInstytucji>
+            <inst:REGON>000000000</inst:REGON>
+          </inst:IdInstytucji>
+          <inst:IdInstytucji>
+            <inst:KRS>0000012345</inst:KRS>
+          </inst:IdInstytucji>
+          <inst:NazwaInstytucji>Urz&#261;d Testowy</inst:NazwaInstytucji>
+          <adr:Adres>
+            <adr:KodPocztowy>00-000</adr:KodPocztowy>
+            <adr:Poczta>Warszawa</adr:Poczta>
+            <adr:Miejscowosc>Warszawa</adr:Miejscowosc>
+            <adr:Ulica rodzajUlicy="ulica">Kr&#243;lewska</adr:Ulica>
+            <adr:Budynek>1</adr:Budynek>
+          </adr:Adres>
+        </inst:Instytucja>
+      </meta:Podmiot>
+    </str:Nadawcy>
+  </wnio:DaneDokumentu>
+  <wnio:TrescDokumentu format="" kodowanie="XML">
+    <wnio:Wartosc>
+      <wnio:RodzajWniosku>
+        <wnio:TytulDokumentu>WNIOSEK</wnio:TytulDokumentu>
+        <wnio:MiejscowoscDokumentu>Warszawa</wnio:MiejscowoscDokumentu>
+      </wnio:RodzajWniosku>
+      <wnio:TrescWniosku>
+        <wnio:ZawartoscTresci>Zwracam si&#281; z pro&#347;b&#261; o rozpatrzenie wniosku....</wnio:ZawartoscTresci>
+      </wnio:TrescWniosku>
+    </wnio:Wartosc>
+  </wnio:TrescDokumentu>
+</wnio:Dokument>

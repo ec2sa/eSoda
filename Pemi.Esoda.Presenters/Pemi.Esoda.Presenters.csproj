@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34F72B60-EF90-4462-AFD6-7AEB4D3F01CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pemi.Esoda.Presenters</RootNamespace>
+    <AssemblyName>Pemi.Esoda.Presenters</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Instalka|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Instalka\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.3302.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Pemi.eSoda.CustomForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Pemi.eSoda.CustomForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignDocumentToCasePresenter.cs" />
+    <Compile Include="AssignedItemsPresenter.cs" />
+    <Compile Include="AwaitingESPDocumentsPresenter.cs" />
+    <Compile Include="BasePresenter.cs" />
+    <Compile Include="CaseHistoryPresenter.cs" />
+    <Compile Include="Interfaces\IViewDocumentSearchView.cs" />
+    <Compile Include="Interfaces\IViewMyDecretationsView.cs" />
+    <Compile Include="ViewCaseDocumentsPresenter.cs" />
+    <Compile Include="ViewCaseSearchPresenter.cs" />
+    <Compile Include="Interfaces\IViewCaseSearchView.cs" />
+    <Compile Include="Interfaces\IViewDocumentFormDocView.cs" />
+    <Compile Include="Interfaces\IViewDocumentItemDocView.cs" />
+    <Compile Include="Interfaces\IViewLegalActView.cs" />
+    <Compile Include="ViewDocumentFormDocPresenter.cs" />
+    <Compile Include="ViewDocumentFormHistoryPresenter.cs" />
+    <Compile Include="Interfaces\IViewDocumentFormHistoryView.cs" />
+    <Compile Include="ViewDocumentFormXmlPresenter.cs" />
+    <Compile Include="Interfaces\IViewDocumentFormXmlView.cs" />
+    <Compile Include="Interfaces\IViewRegistrySimpleView.cs" />
+    <Compile Include="ViewDocumentFormPresenter.cs" />
+    <Compile Include="Interfaces\IViewDocumentFormView.cs" />
+    <Compile Include="RedirectDocumentMultiplePresenter.cs" />
+    <Compile Include="CreateUserPresenter.cs" />
+    <Compile Include="DocumentHistoryPresenter.cs" />
+    <Compile Include="DownloadFilePresenter.cs" />
+    <Compile Include="EditRegistyItemPresenter.cs" />
+    <Compile Include="ExecutingCommandEventArgs.cs" />
+    <Compile Include="GetImagePresenter.cs" />
+    <Compile Include="AddItemScanPresenter.cs" />
+    <Compile Include="Interfaces\IRedirectDocumentMultipleView.cs" />
+    <Compile Include="Interfaces\IAddItemScanView.cs" />
+    <Compile Include="Interfaces\IAssignDocumentToCaseView.cs" />
+    <Compile Include="Interfaces\IAssignedItemsView.cs" />
+    <Compile Include="Interfaces\IAwaitingESPDocumentView.cs" />
+    <Compile Include="Interfaces\ICreateUserView.cs" />
+    <Compile Include="Interfaces\IDownloadFileView.cs" />
+    <Compile Include="Interfaces\IRedirectDocumentView.cs" />
+    <Compile Include="Interfaces\IViewCaseDocumentsView.cs" />
+    <Compile Include="Interfaces\IViewCaseHistoryView.cs" />
+    <Compile Include="Interfaces\IViewCaseView.cs" />
+    <Compile Include="Interfaces\IViewDocumentActionsView.cs" />
+    <Compile Include="Interfaces\IViewDocumentHistoryView.cs" />
+    <Compile Include="Interfaces\IEditRegistyItemView.cs" />
+    <Compile Include="Interfaces\IGetImageView.cs" />
+    <Compile Include="Interfaces\IRegistryItemDetailsView.cs" />
+    <Compile Include="Interfaces\ISessionProvider.cs" />
+    <Compile Include="Interfaces\IView.cs" />
+    <Compile Include="Interfaces\IViewDocumentItemsView.cs" />
+    <Compile Include="Interfaces\IViewDocumentView.cs" />
+    <Compile Include="Interfaces\IViewItemHistoryView.cs" />
+    <Compile Include="Interfaces\IViewItemScansView.cs" />
+    <Compile Include="Interfaces\IViewRegistryView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedirectDocumentPresenter.cs" />
+    <Compile Include="RegistryItemDetailsPresenter.cs" />
+    <Compile Include="SearchCustomersEventArgs.cs" />
+    <Compile Include="ViewCasePresenter.cs" />
+    <Compile Include="ViewDocumentActionsPresenter.cs" />
+    <Compile Include="ViewDocumentItemDocPresenter.cs" />
+    <Compile Include="ViewDocumentItemsPresenter.cs" />
+    <Compile Include="ViewDocumentPresenter.cs" />
+    <Compile Include="ViewDocumentSearchPresenter.cs" />
+    <Compile Include="ViewItemHistoryPresenter.cs" />
+    <Compile Include="ViewItemScansPresenter.cs" />
+    <Compile Include="ViewLegalActPresenter.cs" />
+    <Compile Include="ViewMyDecretationsSearchPresenter.cs" />
+    <Compile Include="ViewRegistryPresenter.cs" />
+    <Compile Include="ViewRegistrySimplePresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pemi.Esoda.Core\Pemi.Esoda.Core.csproj">
+      <Project>{F375D6C1-CA16-43C0-8C1A-A0D93A100330}</Project>
+      <Name>Pemi.Esoda.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.DataAccess\Pemi.Esoda.DataAccess.csproj">
+      <Project>{C0CC9207-1DF2-463D-9260-B100001A9BD8}</Project>
+      <Name>Pemi.Esoda.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.DTO\Pemi.Esoda.DTO.csproj">
+      <Project>{A285096C-58BD-4119-B4BF-24ADE55FC0C8}</Project>
+      <Name>Pemi.Esoda.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.Tasks\Pemi.Esoda.Tasks.csproj">
+      <Project>{7A752F4C-8703-4C81-A925-FC5550E58300}</Project>
+      <Name>Pemi.Esoda.Tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pemi.Esoda.Tools\Pemi.Esoda.Tools.csproj">
+      <Project>{6EFBB705-9987-45E5-83E6-81001B27D1FD}</Project>
+      <Name>Pemi.Esoda.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PresentersDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

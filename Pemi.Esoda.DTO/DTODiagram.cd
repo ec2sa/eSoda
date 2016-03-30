@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Pemi.Esoda.DTO.AddressDTO">
+    <Position X="0.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>AddressDTO.cs</FileName>
+      <HashCode>AAAAABAAAAAAAAQIIAAAEAAACAAAQAAQAAIAACAiAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DTO.BaseDTO">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseDTO.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DTO.CustomerDTO">
+    <Position X="3" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>CustomerDTO.cs</FileName>
+      <HashCode>AAEAMECAAgAAAQAAAAEAAAQAAAAAAAACAAAAAEAAAAg=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Pemi.Esoda.DTO.BaseDTO" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="1.863" />
+        <Point X="4.5" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Pemi.Esoda.DTO.DocumentItemDTO">
+    <Position X="7.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DocumentItemDTO.cs</FileName>
+      <HashCode>AAAAAQAAAAAggAQAIAAEAAAAAAAAAQAAAAEAAAAAAgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pemi.Esoda.DTO.SimpleLookupDTO">
+    <Position X="5.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>SimpleLookupDTO.cs</FileName>
+      <HashCode>AAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="1.148" />
+  </Class>
+  <Interface Name="Pemi.Esoda.DTO.ILookupDTO">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ILookupDTO.cs</FileName>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

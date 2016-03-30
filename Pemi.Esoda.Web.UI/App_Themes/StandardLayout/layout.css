@@ -1,0 +1,1369 @@
+@media screen
+{
+
+    body
+    {
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #allContent
+    {
+        font: 0.70em normal helvetica,verdana,arial,sans-serif;
+        width: 80em;
+        min-width: 95%;
+        margin: 0.5em auto;
+        min-height:600px!important;
+    }
+
+    #headerTop
+    {
+        text-align: right; /*   position:relative;     color: #7d7d7d;     padding: 0.5em 2em;     background-color:#fff;     vertical-align:text-top;     height:1.2em;   */
+    }
+
+    #headerContent
+    {
+        margin: 1em auto;
+        width: 400px;
+    }
+
+
+    .checkedIcon
+    {
+        display: block;
+        width: 12px;
+        height: 13px;
+        background-image: url(img/checkedIcon.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    .checkedIcon span
+    {
+        display: none;
+    }
+    .info
+    {
+        position: absolute;
+        left: 1em;
+    }
+    .version
+    {
+        position: absolute;
+        right: 1em;
+    }
+
+    .chatnotify
+    {
+        position: absolute;
+        right: 0em;
+        top: 18em; /*21*/
+    }
+
+    #naviPath
+    {
+        color: White;
+        background-color: Black;
+        height: 19px;
+        padding-left: 3em;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #naviPath a
+    {
+        color: White !important;
+    }
+
+
+    #singleColumnContent
+    {
+        background-color: #fff;
+    }
+
+    #mainContent
+    {
+        float: left;
+        width: 100%;
+    }
+    #leftColumn
+    {
+        float: left;
+        width: 49%;
+    }
+
+    input.textright
+    {
+        text-align: right;
+    }
+
+    #rightColumn
+    {
+        float: right;
+        width: 49%;
+    }
+
+
+
+    /*****************  glowne menu *****************/
+    #navlist
+    {
+        padding: 0;
+        margin-bottom: 0.5em;
+        border-bottom: 3px solid #C3AC72;
+        display: block;
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    #navlist li
+    {
+        list-style: none;
+        margin: -1px;
+        padding: 0;
+        display: inline;
+    }
+
+    #navlist li a
+    {
+        padding: 5px 1em;
+        margin: 0;
+        display: inline-block;
+        width: 13em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bolder;
+        background-image: url(img/tabbkinactive.png);
+        background-repeat: repeat-x;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #navlist li a:hover
+    {
+        color: #fff;
+        background-color: #dca143;
+        border-color: #dca143;
+    }
+
+    #navlist li a.current
+    {
+        background-color: #dca143;
+        color: #756744;
+        background-image: url(img/tabbkactive.png);
+        background-repeat: repeat-x;
+        padding: 8px 1em 5px 1em;
+    }
+
+
+
+    /*********** lista aplikacji *************/
+    ul.applicationList
+    {
+        list-style-type: none;
+        font-size: 1.3em;
+        display: block;
+        width: 40%;
+        margin: 2em 30%;
+        text-align: center;
+    }
+    ul.applicationList li
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*********** lista wyszukiwarek *************/
+    ul.searchList
+    {
+        list-style-type: none;
+        font-size: 1.3em;
+        display: block;
+        width: 40%;
+        margin: 2em 30%;
+        text-align: center;
+    }
+    ul.searchList li
+    {
+        margin: 0;
+        padding: 0;
+    }
+    /*linki*/
+    a.link:hover, #status a:hover, a:hover
+    {
+        color: red;
+    }
+    .esp
+    {
+        float: right;
+    }
+
+    a.link, a, a:visited, a:active
+    {
+        font-weight: normal;
+        text-decoration: none;
+        color: #555c86;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+    /************** progress ******/
+
+    #ctl00_updprogress
+    {
+        display: block;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+    }
+
+
+    div.progress
+    {
+        position: relative;
+        margin: 20% auto 20% auto;
+        border: 2px solid #958F84;
+        padding: 1em;
+        width: 140px;
+        height: 60px;
+        background-color: #E1D8C5;
+    }
+    div.progress img
+    {
+        display: block;
+        margin: auto;
+        width: 32px;
+    }
+    div.progress p
+    {
+        font-size: 0.8em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #footerContent
+    {
+        margin-top: 2px;
+        clear: both;
+    }
+    #footerContent p
+    {
+        position: relative;
+        padding-right: 75px;
+        height: 30px;
+        background-image: url(img/logopemi.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        border-top: 1px solid #595959;
+        text-align: right;
+        line-height: 26px;
+        vertical-align: bottom;
+        color: #999;
+    }
+    #footerContent p span
+    {
+        position: absolute;
+        left: 0;
+    }
+    hr
+    {
+        border-bottom: 1px solid #686868; /* #a42f41;*/
+        height: 1px;
+    }
+    /****************** pager *********************/
+    #pager, #pagerTop, #pagerBottom
+    {
+        text-align: center;
+    }
+    /************ pusty wiersz grida **************/
+    .emptyRow
+    {
+        display: block;
+        width: 90%;
+        padding: 0.5em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    /***************ramka przewijalna**************/
+    div.ramka
+    {
+        overflow: scroll;
+        height: 450px;
+        border: 1px solid black;
+    }
+    .dziennikScroll
+    {
+        overflow: scroll;
+        height: 300px;
+    }
+    /***************lista skanow***************/
+    .skanInfo
+    {
+        padding: 0.25em 0.5em;
+    }
+    .skanInfo input
+    {
+        display: block;
+        float: left;
+        border: 1px solid blue !important;
+        margin: 0.25em 0;
+    }
+    .skanInfo span.cbGrupuj input
+    {
+        border: none !important;
+        margin: 0;
+        padding: 0;
+    }
+    .skanInfo span.cbGrupuj
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .skanInfo input:hover
+    {
+        border: 1px solid red !important;
+    }
+    .skanInfo table
+    {
+        float: left;
+        margin-left: 0.5em;
+        border-collapse: collapse;
+        border: 1px solid #595959;
+        margin-bottom: 0.8em;
+        width: 90%;
+    }
+    .skanInfo table td, .skanInfo table th
+    {
+        border: 1px solid #999;
+        padding: 1px 2px;
+        margin: 0;
+        background-color: #FFF2E1;
+    }
+
+    .skanInfo table th
+    {
+        text-align: right;
+        color: #595959;
+    }
+    .skanInfo table td
+    {
+        text-align: right;
+    }
+
+    table
+    {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    ul
+    {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    ul li
+    {
+        padding-left: 20px;
+    }
+    #mainContent h1
+    {
+        height: 2.3em;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+        background-color: #F7F5F2;
+        color: #000;
+        margin: 0.2em 0;
+        padding: 1em 0em 0.2em 4em;
+    }
+
+    #mainContent h2
+    {
+        /*height: 2.3em;*/
+        font-size: 1.2em; /* font-size: 1.4em; */
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        background-color: #F7F5F2; /* #a42f41;*/
+        color: #7d7d7d;
+        margin: 0.2em 0;
+        padding: 0.5em 0 0.5em 2em; /*padding:1em 0em 0.2em 4em;*/
+    }
+
+    #mainContent h3
+    {
+        font-size: 1.1em;
+        font-weight: normal;
+        text-align: center;
+        background-color: #F7F5F2;
+        color: #7d7d7d;
+        margin: 0.2em 0;
+        padding: 0 0 0.2em 0;
+    }
+
+    table.grid caption
+    {
+        font-weight: bold;
+        padding-bottom: .3em;
+    }
+
+    table.grid th, table.grid th a, table .gridHeader, table.grid caption
+    {
+        background-color: #C3AC72; /*#a19b85;  #a42f41;*/
+        color: #fff;
+        padding: 2px 4px;
+    }
+    table.grid th, table.grid
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table.grid table, table.grid table td
+    {
+        border: none;
+    }
+
+    table.grid th a
+    {
+        display: block; /*background-image:url(img/sort.png);     background-position:right center;     background-repeat:no-repeat;     padding-right:15px;*/
+    }
+
+    table .gridHeader
+    {
+        width: 10em;
+    }
+
+    table.grid td
+    {
+        background-color: #fff;
+        color: #000;
+        padding: 2px 4px;
+        margin: 0;
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    table.grid tr.wybrany td
+    {
+        background-color: #FFE1AB !important;
+    }
+
+    table.detailsView td
+    {
+        padding: 0.1em;
+        border-collapse: collapse;
+    }
+
+    table.detailsView
+    {
+        border-collapse: collapse;
+    }
+    table.detailsView td input
+    {
+        display: block;
+        width: 90%;
+    }
+
+    ul.opcje
+    {
+        margin: 0;
+        padding: 0;
+    }
+    ul.opcje li
+    {
+        display: inline;
+        padding: 0 0.5em;
+    }
+
+    /**************** podglad plikow/skanow dokumentu************************/
+
+    div.currentItem
+    {
+        background-color: #FFD280 !important;
+        border-width: 3px;
+    }
+    div.opcjePodgladuPliku
+    {
+        display: block;
+        float: left;
+        width: 90%;
+        border: 1px solid #a42f41;
+        margin: 3px;
+        padding: 2px;
+        background-color: #FFE9BF;
+    }
+    div.opcjePodgladuPliku img
+    {
+        display: block;
+        float: left;
+        width: 55px;
+        padding: 0;
+        margin-right: 0.5em;
+        border: 1px solid #000 !important;
+    }
+    div.opcjePodgladuPliku p
+    {
+        clear: both;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    div.opcjePodgladuWersjiPliku
+    {
+        border: 1px solid #aaa;
+        background-color: #FFF6E6;
+        margin-left: 2em;
+        margin-bottom: 0.4em;
+        padding: 2px;
+    }
+    div.opcjePodgladuWersjiPliku h4
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #leftNarrowColumn
+    {
+        float: left;
+        width: 25%;
+    }
+    #rightWideColumn
+    {
+        float: right;
+        width: 74%;
+    }
+
+    .pozycjaNieparzysta td
+    {
+        background-color: #F7f5f2 !important;
+    }
+
+    fieldset
+    {
+        border: 1px solid #C3AC72;
+    }
+    legend
+    {
+        /*border:2px solid #686868;*/
+        padding: 0.2em;
+        color: #fff;
+        background-color: #C3AC72;
+        font-weight: bold;
+    }
+
+    fieldset.registryItem, fieldset.historyItems
+    {
+        width: 98%;
+        padding: 1%;
+        margin: 0;
+    }
+
+    fieldset.registryItem table, fieldset.historyItems table
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    fieldset.registryItem table, fieldset.registryItem table th, fieldset.registryItem table td
+    {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    fieldset.registryItem table th
+    {
+        padding: 0.1em 0.5em;
+        text-align: right;
+        width: 12em;
+    }
+    fieldset.registryItem table td
+    {
+        padding: 0.1em 0.5em;
+    }
+
+    /* ********** wyszukiwarka **************/
+    table.searchForm
+    {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    table.searchForm th, table.searchForm td
+    {
+        padding: 0.2em 0.5em;
+        border-collapse: collapse;
+        border: 1px solid #000;
+    }
+    table.searchForm th
+    {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    table.fullWidth, .fullWidth
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /* ****** Kontrolka numerowania spraw   ***********/
+
+    .numeracjaSpraw
+    {
+        border: none;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    .numeracjaSpraw td, .numeracjaSpraw th
+    {
+        padding: 0.1em 0.5em;
+        margin: 0;
+        border-collapse: collapse;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .numeracjaSpraw td input
+    {
+        width: 5em;
+        border: 1px solid #000;
+        display: block;
+        margin: 2px;
+    }
+    .numberRow td
+    {
+        border: 2px solid black;
+        background-color: #FFE1AB;
+    }
+
+    /********* pola tekstowe ************/
+    input.longTextBox, select.longTextBox, textarea.longTextBox
+    {
+        width: 90%;
+        margin: 0;
+    }
+
+    /********* drzewa ********************/
+    .treeSelectedNode
+    {
+        border: 1px solid #A42F41;
+    }
+
+    /****************  errors ************/
+
+    .errorMsg
+    {
+        color: Red;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .errorBox
+    {
+        margin: 5em auto;
+        padding: 2em;
+        width: 70em;
+        border: 2px solid red;
+    }
+
+    .successMsg
+    {
+        color: #008000;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    /********** aktywna opcja **************/
+    a.currentOption
+    {
+        border: 1px solid #A42F41;
+        font-weight: bold;
+        background-color: #FFE1AB;
+    }
+
+    .registryEditor
+    {
+        padding: 2em 1em;
+    }
+
+    .registryItemField label.requiredField
+    {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .registryItemField label
+    {
+        display: block;
+        padding: 0.2em;
+    }
+    .registryItemField input
+    {
+        width: 15em;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .registryItemField h4
+    {
+        color: #80724F;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.registryItemField
+    {
+        padding: 0.2em 0;
+    }
+
+    .registryItemLevel1
+    {
+        margin-left: 2em;
+    }
+    .registryItemLevel2
+    {
+        margin-left: 4em;
+    }
+    .registryItemLevel3
+    {
+        margin-left: 6em;
+    }
+    .registryItemLevel4
+    {
+        margin-left: 8em;
+    }
+    .registryItemLevel5
+    {
+        margin-left: 10em;
+    }
+    .registryItemLevel6
+    {
+        margin-left: 12em;
+    }
+
+
+
+    #logoContainer1, #logoContainer2, #logoContainer1 *, #logoContainer2 *
+    {
+        border:none!important;
+        border-collapse:collapse!important;
+         margin: 0;
+        padding: 0;
+         background-color:transparent;
+         vertical-align:top;
+    }
+     #logoContainer1 td, #logoContainer2 td
+     {
+         
+     }
+   #logoContainer2
+   {
+       text-align:right;
+   }
+   
+    /* sprawa */
+    #sprawaContent
+    {
+        padding-top: 10px;
+        padding-left: 150px;
+        height: 82px;
+        background-color: #DDE7E8;
+        background-image: url(img/sprawa.PNG);
+        background-repeat: no-repeat;
+        background-position: 3em top;
+        border: 0px solid red;
+        margin: 0;
+    }
+
+    #sprawaContent h1
+    {
+        color: #000;
+        font: 2em normal helvetica,verdana,arial,sans-serif;
+        background-color: #DDE7E8;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 0px;
+        margin: 0px;
+        border: 0px solid green;
+    }
+
+    table.gridSprawa th, table.gridSprawa th a, table .gridHeader
+    {
+        background-color: #0A6572;
+        color: #fff;
+        padding: 2px 4px;
+    }
+
+    table.gridSprawa tr.wybrany td
+    {
+        background-color: #DDE7E8 !important;
+    }
+
+    table.gridSprawaView th, table.gridSprawaView th a, table .gridHeader
+    {
+        background-color: #DDE7E8;
+        color: #000;
+        padding: 2px 4px;
+    }
+
+
+    table.gridDokument th, table.gridDokument th a, table .gridHeader
+    {
+        background-color: #B2BD7D;
+        color: #fff;
+        padding: 2px 4px;
+    }
+
+    table.gridDokumentView th, table.gridDokumentView th a, table .gridHeader
+    {
+        background-color: #E1E7C3;
+        color: #000;
+        padding: 2px 4px;
+    }
+
+    /* dokument */
+    #dokumentContent
+    {
+        padding-top: 10px;
+        padding-left: 150px;
+        height: 82px;
+        background-color: #E1E7C3;
+        background-image: url(img/dokument.PNG);
+        background-repeat: no-repeat;
+        background-position: 3em top;
+        margin: 0;
+    }
+
+    #dokumentContent h1
+    {
+        color: #000;
+        font: 2em normal helvetica,verdana,arial,sans-serif;
+        background-color: #E1E7C3;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+
+    #legendContent
+    {
+        position: relative;
+        top: 44px;
+        padding: 0px;
+        margin: 0px;
+        background-image: url(img/legend.png);
+        background-repeat: no-repeat;
+        height: 36px;
+        width: 110px;
+    }
+
+
+
+
+    .advancedOptionPanel
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    .advancedOptionPanel table
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table.RedirectMultiplyGrid th, table.RedirectMultiplyGrid
+    {
+        background-color: #C3AC72;
+        color: #fff;
+        padding: 2px 4px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table.RedirectMultiplyGrid td
+    {
+        background-color: #fff;
+        color: #000;
+        padding: 2px 4px;
+        margin: 0;
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+
+    table.RedirectMultiplyGrid table, table.RedirectMultiplyGrid table td, table.RedirectMultiplyGrid table th
+    {
+        border: none;
+    }
+
+
+
+    table.RedirectMultiplyGrid td a, table.RedirectMultiplyGrid td a.link, table.RedirectMultiplyGrid td a:visited, table.RedirectMultiplyGrid td a:active
+    {
+        font-size: 1.1em;
+        color: #000;
+        text-decoration: underline;
+    }
+
+    table.RedirectMultiplyAdvancedOptionGrid th, table.RedirectMultiplyAdvancedOptionGrid
+    {
+        background-color: #CCC;
+        color: #000;
+        font-weight: normal;
+        padding: 2px 4px;
+        text-align: left;
+    }
+
+    table.RedirectMultiplyAdvancedOptionGrid td
+    {
+        background-color: #ccc;
+        color: #000;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .RedirectMultiplyMessageWrap
+    {
+        margin: 10px 0px;
+    }
+    .RedirectMultiplyMessage
+    {
+        border: 0px solid #F00;
+        color: #F00;
+        font-size: 1.2em;
+        padding: 2px;
+    }
+    /*********** message of the day **************/
+    .MessageOfTheDay
+    {
+        float: left;
+        border: 1px solid;
+        background-color: #edd8bd;
+        color: Black;
+        font-size: 1em;
+        padding: 2px;
+        width: 800px;
+        margin: 1em auto;
+    }
+    .MessageOfTheDay pre
+    {
+        font-family: Verdana;
+        font-size: 1.2em;
+    }
+
+    .esodachat-wrap
+    {
+        font-family: helvetica,verdana,arial,sans-serif;
+        font-size: 0.8em;
+    }
+    .esodachat-from
+    {
+        color: #0a6572;
+        border-bottom: 1px solid #ccc;
+        margin: 3px;
+        padding-bottom: 3px;
+    }
+    .esodachat-frombold
+    {
+        color: #0a6572;
+        font-weight: bold;
+        margin: 0px 3px;
+    }
+    .esodachat-to
+    {
+        color: #000;
+        border-bottom: 1px solid #ccc;
+        margin: 3px;
+        padding-bottom: 3px;
+    }
+    .esodachat-tobold
+    {
+        color: #000;
+        font-weight: bold;
+        margin: 0px 3px;
+    }
+
+
+    .modalBackground
+    {
+        background-color: Gray;
+        filter: alpha(opacity=70);
+        opacity: 0.7;
+    }
+
+    .modalPopup
+    {
+        background-color: #ffffdd;
+        border-width: 3px;
+        border-style: solid;
+        border-color: Gray;
+        padding: 3px;
+        width: 610px;
+    }
+
+
+    .alignedLabel
+    {
+        display: inline-block;
+        width: 20em;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .alignedLabelShort
+    {
+        display: inline-block;
+        width: 17em;
+        font-weight: bold;
+        text-align: right;
+    }
+
+
+    a.rssLink
+    {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-top: 1em;
+        text-align: center;
+        font-weight: bold;
+        background-image: url(img/rss.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    table.layout td, table.layout th
+    {
+        border: none;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+    }
+    .statusWysylki
+    {
+        font-weight: bold;
+        color: Green;
+    }
+
+    .stamp
+    {
+        display: inline-block;
+        float: right;
+        width: 24px;
+        height: 24px;
+        background-image: url(img/stamp.png);
+        background-repeat: no-repeat;
+    }
+
+    .expandedTextboxes input
+    {
+        width: 95%;
+    }
+
+    .findDoc
+    {
+        background: url(img/findDoc.png) no-repeat 1.2em top;
+        display: inline-block;
+        width: 35px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    .foundDoc
+    {
+        background: url(img/foundDoc.png) no-repeat 1.2em top;
+        display: inline-block;
+        width: 35px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    .notFoundDoc
+    {
+        background: url(img/notFoundDoc.png) no-repeat 1.2em top;
+        display: inline-block;
+        width: 35px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .RCFilter
+    {
+        width: auto !important;
+        display: inline;
+        border: 1px solid #666;
+        background-color: #EDE1C7;
+    }
+
+    .ajax__calendar_container
+    {
+        padding: 4px;
+        position: absolute;
+        cursor: default;
+        width: 170px !important;
+        font-size: 11px;
+        text-align: center;
+        font-family: tahoma,verdana,helvetica;
+        z-index: 100;
+    }
+    .ajax__calendar_body
+    {
+        height: 139px;
+        width: 170px;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+    }
+    .ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years
+    {
+        top: 0px;
+        left: 0px;
+        height: 139px;
+        width: 170px;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+    }
+    .ajax__calendar_container table
+    {
+        font-size: 11px;
+    }
+    .ajax__calendar_container table td
+    {
+        border: none !important;
+        padding: 0px;
+    }
+    .ajax__calendar_header
+    {
+        height: 20px;
+        width: 100%;
+    }
+    .ajax__calendar_prev
+    {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: url(WebResource.axd?d=x6lt9HfG5Si8NZjMNt1DLcY6US8hUl3G4muzIFtahMQFZTbwxJ00qsx5N8jeAW90ZvGxZ6SJJh48yx62JKItzQ2&t=633053122925312500);
+    }
+    .ajax__calendar_next
+    {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        float: right;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: url(WebResource.axd?d=x6lt9HfG5Si8NZjMNt1DLcY6US8hUl3G4muzIFtahMQFZTbwxJ00qsx5N8jeAW90HZemRms4wXOo1BZWTwWtNQ2&t=633053122925312500);
+    }
+    .ajax__calendar_title
+    {
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .ajax__calendar_footer
+    {
+        height: 15px;
+    }
+    .ajax__calendar_today
+    {
+        cursor: pointer;
+        padding-top: 3px;
+    }
+    .ajax__calendar_dayname
+    {
+        height: 17px;
+        width: 17px;
+        text-align: right;
+        padding: 0 2px !important;
+    }
+    .ajax__calendar_day
+    {
+        height: 17px;
+        width: 18px;
+        text-align: right;
+        padding: 0 2px !important;
+        cursor: pointer;
+    }
+    .ajax__calendar_month
+    {
+        height: 44px;
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .ajax__calendar_year
+    {
+        height: 44px;
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .ajax__calendar .ajax__calendar_container
+    {
+        border: 1px solid #646464;
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .ajax__calendar .ajax__calendar_footer
+    {
+        border-top: 1px solid #f5f5f5;
+    }
+    .ajax__calendar .ajax__calendar_dayname
+    {
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .ajax__calendar .ajax__calendar_day
+    {
+        border: 1px solid #ffffff;
+    }
+    .ajax__calendar .ajax__calendar_month
+    {
+        border: 1px solid #ffffff;
+    }
+    .ajax__calendar .ajax__calendar_year
+    {
+        border: 1px solid #ffffff;
+    }
+
+    .ajax__calendar .ajax__calendar_active .ajax__calendar_day
+    {
+        background-color: #edf9ff;
+        border-color: #0066cc;
+        color: #0066cc;
+    }
+    .ajax__calendar .ajax__calendar_active .ajax__calendar_month
+    {
+        background-color: #edf9ff;
+        border-color: #0066cc;
+        color: #0066cc;
+    }
+    .ajax__calendar .ajax__calendar_active .ajax__calendar_year
+    {
+        background-color: #edf9ff;
+        border-color: #0066cc;
+        color: #0066cc;
+    }
+
+    .ajax__calendar .ajax__calendar_other .ajax__calendar_day
+    {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #646464;
+    }
+    .ajax__calendar .ajax__calendar_other .ajax__calendar_year
+    {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #646464;
+    }
+
+    .ajax__calendar .ajax__calendar_hover .ajax__calendar_day
+    {
+        background-color: #edf9ff;
+        border-color: #daf2fc;
+        color: #0066cc;
+    }
+    .ajax__calendar .ajax__calendar_hover .ajax__calendar_month
+    {
+        background-color: #edf9ff;
+        border-color: #daf2fc;
+        color: #0066cc;
+    }
+    .ajax__calendar .ajax__calendar_hover .ajax__calendar_year
+    {
+        background-color: #edf9ff;
+        border-color: #daf2fc;
+        color: #0066cc;
+    }
+
+    .ajax__calendar .ajax__calendar_hover .ajax__calendar_title
+    {
+        color: #0066cc;
+    }
+    .ajax__calendar .ajax__calendar_hover .ajax__calendar_today
+    {
+        color: #0066cc;
+    }
+}
+
+@media print
+{
+    body
+    {
+        font-size: 8pt;
+        width: 100%;
+    }
+    hr
+    {
+        display: none;
+    }
+    #headerContent, #footerContent, #navlist, #allHeader
+    {
+        display: none;
+    }
+    #mainContent *
+    {
+        visibility: hidden;
+    }
+
+    #mainContent .visibleOnPrint, #mainContent .visibleOnPrint *
+    {
+        visibility: visible;
+    }
+
+    #mainContent .listaPozycjiRejestru
+    {
+        visibility: visible;
+    }
+    #mainContent table.searchForm *, #mainContent #pager *
+    {
+        display: none;
+    }
+
+    #mainContent .listaPozycjiRejestru td, #mainContent .listaPozycjiRejestru th
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+
+    #mainContent .listaPozycjiRejestru td.screenOnly, #mainContent .listaPozycjiRejestru th.screenOnly, #mainContent .listaPozycjiRejestru td.screenOnly *
+    {
+        display: none;
+    }
+    body #mainContent .listaPozycjiRejestru *
+    {
+        visibility: visible;
+    }
+    #mainContent div.dziennikScroll
+    {
+        overflow: visible;
+        width: 95%;
+        height: 100%;
+        margin: 1em auto;
+        padding: 1em;
+    }
+
+}
